@@ -1,29 +1,25 @@
+from typing import cast
+
 import unrealsdk
 from Mods import ModMenu
-from Mods.EridiumLib import getCurrentPlayerController
 
 _DefaultGameInfo = unrealsdk.FindObject("WillowCoopGameInfo", "WillowGame.Default__WillowCoopGameInfo")
 
-barrel_projectiles = {
-    'SG_Barrel_Jakobs': 6,
-    'SG_Barrel_Bandit': 8,
-    'SG_Barrel_Hyperion': 0,
-    'SG_Barrel_Tediore': 0,
-    'SG_Barrel_Torgue': 11
-}
-accessory_projectiles = {
-    'SG_Accessory_VerticalGrip': 2
-}
+
+def _get_current_player_controller() -> unrealsdk.UObject:
+    """Returns the local player"""
+    return cast(unrealsdk.UObject, unrealsdk.GetEngine().GamePlayers[0].Actor)
 
 
 def _clone_obj(new_name, in_class_str, template_obj_str):
+    """Creates a fresh object based on the class name and a template object defintion"""
     obj_to_clone = unrealsdk.FindObject(in_class_str, template_obj_str)
     return unrealsdk.ConstructObject(Class=in_class_str, Outer=obj_to_clone.Outer, Name=new_name, Template=obj_to_clone)
 
 
 def _Feedback(feedback):
-    """Presents a "training" message to the user with the given string."""
-    PC = getCurrentPlayerController()
+    """Presents a "training" message to the user with the given string"""
+    PC = _get_current_player_controller()
     HUDMovie = PC.GetHUDMovie()
     if HUDMovie is None:
         return
@@ -35,7 +31,7 @@ def _Feedback(feedback):
 
 
 def _add_skill_definition_instance(skill_msg_name, template_obj_str):
-    PC = getCurrentPlayerController()
+    PC = _get_current_player_controller()
     skill_manager = PC.GetSkillManager()
     new_skill = _clone_obj(skill_msg_name, 'SkillDefinition', template_obj_str)
 
@@ -50,7 +46,7 @@ def _add_skill_definition_instance(skill_msg_name, template_obj_str):
 
 
 def _remove_skill_definition_instance(skill_msg_name, skill_name):
-    PC = getCurrentPlayerController()
+    PC = _get_current_player_controller()
     skill_manager = PC.GetSkillManager()
 
     skill_stacks = [skill.Definition for skill in skill_manager.ActiveSkills if
@@ -80,7 +76,7 @@ def remove_infinite_ammo_stack() -> None:
 
 
 def do_10_fake_reloads() -> None:
-    PC = getCurrentPlayerController()
+    PC = _get_current_player_controller()
     skill_manager = PC.GetSkillManager()
     skill_manager.NotifySkillDamagedEvent(4, PC, PC, None)
     for i in range(10):
@@ -88,15 +84,17 @@ def do_10_fake_reloads() -> None:
 
 
 def merge_all_equipped_weapons() -> None:
-    PC = getCurrentPlayerController()
+    PC = _get_current_player_controller()
     inv_manager = PC.GetPawnInventoryManager()
     weapons = inv_manager.GetEquippedWeapons()
     msg = ''
     for weapon in weapons:
         if weapon:
             weapon.ApplyAllExternalAttributeEffects()
-            msg = msg + '\n' + (weapon.DefinitionData.PrefixPartDefinition.PartName + ' ' or '') + weapon.DefinitionData.TitlePartDefinition.PartName
+            msg = msg + '\n' + (
+                    weapon.DefinitionData.PrefixPartDefinition.PartName + ' ' or '') + weapon.DefinitionData.TitlePartDefinition.PartName
     _Feedback(f"Bonuses from the following weapons are applied: {msg}")
+
 
 class AnyPercentHelper(ModMenu.SDKMod):
     Name: str = "Any% Helper"
@@ -153,7 +151,7 @@ class AnyPercentHelper(ModMenu.SDKMod):
         """
         if caller.Definition.Name not in ['Impact_Shield_Skill_Legendary', 'Impact_Shield_Skill']:
             return True
-        PC = getCurrentPlayerController()
+        PC = _get_current_player_controller()
         active_weapon = PC.GetActiveOrBestWeapon()
         self._apply_full_amp(active_weapon, caller)
         return True
@@ -165,7 +163,7 @@ class AnyPercentHelper(ModMenu.SDKMod):
         Adjust damage bonus when swapping to a new weapon with full shield
         since it may have a different projectile count.
         """
-        PC = getCurrentPlayerController()
+        PC = _get_current_player_controller()
         if caller != PC.GetActiveOrBestWeapon():
             return True
         skill_manager = PC.GetSkillManager()
@@ -187,7 +185,7 @@ class AnyPercentHelper(ModMenu.SDKMod):
         Allow merging weapons to keep crit bonuses, healing, etc. Just block removing attribute effects when changing
         weapons in inventory and a pending weapon exists (happens when entering inventory mid-swap)
         """
-        PC = getCurrentPlayerController()
+        PC = _get_current_player_controller()
         inv_manager = PC.GetPawnInventoryManager()
 
         if PC.bStatusMenuOpen and inv_manager.PendingWeapon:
