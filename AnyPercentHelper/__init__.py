@@ -1,6 +1,7 @@
 from typing import cast
 
 import unrealsdk
+from unrealsdk import Log
 from Mods import ModMenu
 
 _DefaultGameInfo = unrealsdk.FindObject("WillowCoopGameInfo", "WillowGame.Default__WillowCoopGameInfo")
@@ -81,6 +82,7 @@ def do_10_fake_reloads() -> None:
     skill_manager.NotifySkillDamagedEvent(4, PC, PC, None)
     for i in range(10):
         skill_manager.NotifySkillEvent(21, PC, PC)
+    _Feedback("Completed 10 fake reloads to stack anarchy")
 
 
 def merge_all_equipped_weapons() -> None:
@@ -114,10 +116,43 @@ class AnyPercentHelper(ModMenu.SDKMod):
     ]
 
     def __init__(self):
-        """
-        This is for the Vladof infinite ammo glitch. Don't need to call super since SDKMod uses __new__
-        """
         self.block_deactivate_half_ammo = False
+        self.FullAmpDamageBoolean = ModMenu.Options.Boolean(
+            Caption="Full Amp Damage",
+            Description="Applies full amp damage to every projectile on multi-projectile weapons",
+            StartingValue=True,
+            Choices=("Off", "On")
+        )
+        self.WeaponMerging = ModMenu.Options.Boolean(
+            Caption="Weapon Merging",
+            Description="Allows weapon merging to stack bonuses from multiple weapons",
+            StartingValue=True,
+            Choices=("Off", "On")
+        )
+        self.VladofInfiniteAmmo = ModMenu.Options.Boolean(
+            Caption="Infinite Ammo Stacking",
+            Description="Allows using a Vladof launcher to stack infinite ammo",
+            StartingValue=True,
+            Choices=("Off", "On")
+        )
+        self.Options = [
+            self.FullAmpDamageBoolean,
+            self.WeaponMerging,
+            self.VladofInfiniteAmmo
+        ]
+
+    @ModMenu.Hook('WillowGame.Skill.Resume')
+    def amp_on_skill_resume(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
+                            params: unrealsdk.FStruct) -> bool:
+        """
+        Adjust damage bonus any time the skill is resumed.
+        """
+        if caller.Definition.Name not in ['Impact_Shield_Skill_Legendary', 'Impact_Shield_Skill']:
+            return True
+        PC = _get_current_player_controller()
+        active_weapon = PC.GetActiveOrBestWeapon()
+        self._apply_full_amp(active_weapon, caller)
+        return True
 
     def _apply_full_amp(self, active_weapon, impact_shield_skill):
         """
@@ -126,6 +161,7 @@ class AnyPercentHelper(ModMenu.SDKMod):
         to the expected total amp damage and we get our pellet estimate. We replace the skill scale constant with the
         projectile count to effectively give every pellet full amp damage.
         """
+
         impact_shield_skill.Deactivate()
         weapon_damage_base = active_weapon.GetMultiProjectileDamage()
 
@@ -140,6 +176,9 @@ class AnyPercentHelper(ModMenu.SDKMod):
             impact_damage_full = weapon_damage_effect.Modifier.Value
             impact_damage_split = weapon_damage_impact_base - weapon_damage_base
             projectiles = round(impact_damage_full / impact_damage_split)
+        # Just set to 1 if option is turned off
+        if not self.FullAmpDamageBoolean.CurrentValue:
+            projectiles = 1
         weapon_damage_effect.EffectData.BaseModifierValue.BaseValueScaleConstant = projectiles
         return
 
@@ -185,6 +224,8 @@ class AnyPercentHelper(ModMenu.SDKMod):
         Allow merging weapons to keep crit bonuses, healing, etc. Just block removing attribute effects when changing
         weapons in inventory and a pending weapon exists (happens when entering inventory mid-swap)
         """
+        if not self.WeaponMerging.CurrentValue:
+            return True
         PC = _get_current_player_controller()
         inv_manager = PC.GetPawnInventoryManager()
 
@@ -219,6 +260,9 @@ class AnyPercentHelper(ModMenu.SDKMod):
         """
         Block when the flag is set and reset the flag.
         """
+        if not self.VladofInfiniteAmmo.CurrentValue:
+            self.block_deactivate_half_ammo = False
+            return True
         if params.Definition.Name == 'Skill_VladofHalfAmmo':
             if self.block_deactivate_half_ammo:
                 self.block_deactivate_half_ammo = False
