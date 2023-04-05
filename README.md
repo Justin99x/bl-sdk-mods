@@ -6,3 +6,5 @@
 
 A repo holding my Borderlands 2 [PythonSDK](https://github.com/bl-sdk/PythonSDK) mods.
 
+### SDK Mod Requirements
+EridiumLib >= 0.4.2
