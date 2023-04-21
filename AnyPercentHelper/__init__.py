@@ -161,7 +161,6 @@ class AnyPercentHelper(ModMenu.SDKMod):
         if not self.FullAmpDamageBoolean.CurrentValue:
             projectiles = 1
         weapon_damage_effect.EffectData.BaseModifierValue.BaseValueScaleConstant = projectiles
-        unrealsdk.Log(projectiles)
         return
 
     @ModMenu.Hook('WillowGame.Skill.Resume')

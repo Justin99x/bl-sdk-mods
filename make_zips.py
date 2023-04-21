@@ -17,5 +17,4 @@ def zip_dir(dir_name: str, files_to_add: list):
 
 
 if __name__ == '__main__':
-
     zip_dir("AnyPercentHelper", ['__init__.py', 'README.md'])
