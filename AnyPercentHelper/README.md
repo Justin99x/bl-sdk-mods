@@ -12,10 +12,7 @@ the map instantly.
 Using in game keybinds, add or remove a "stack" of Buck Up.
 
 ### Add anarchy stacks
-Notifies the game that 10 reloads were performed while in combat. Without skill points in Rational Anarchist or 
-Typeclast Iconoclast, this has the effect of adding exactly 10 stacks of Anarchy. There is a bug where if you reload and
-lose all your anarchy stacks, this command won't work again until you either switch to another weapon with a full clip, 
-or reload the current weapon by emptying its clip.
+Adds 10 anarchy stacks, up to the maximum stack cap.
 
 ### Amp damage glitch
 Kind of a hacky solution that multiplies amp shield bonus by the number of pellets on the card when applying the bonus

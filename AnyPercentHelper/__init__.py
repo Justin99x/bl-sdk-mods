@@ -76,13 +76,16 @@ def remove_infinite_ammo_stack() -> None:
     _remove_skill_definition_instance('Vladoff Free Shot', 'Vladof Half Ammo')
 
 
-def do_10_fake_reloads() -> None:
+def add_anarchy_stacks() -> None:
     PC = _get_current_player_controller()
-    skill_manager = PC.GetSkillManager()
-    skill_manager.NotifySkillDamagedEvent(4, PC, PC, None)
-    for i in range(10):
-        skill_manager.NotifySkillEvent(21, PC, PC)
-    _Feedback("Completed 10 fake reloads to stack anarchy")
+    anarchy_attr = unrealsdk.FindObject("DesignerAttributeDefinition",
+                                        "GD_Tulip_Mechromancer_Skills.Misc.Att_Anarchy_NumberOfStacks")
+    max_stacks_attr = unrealsdk.FindObject("DesignerAttributeDefinition",
+                                           "GD_Tulip_Mechromancer_Skills.Misc.Att_Anarchy_StackCap")
+    max_stacks = max_stacks_attr.GetValue(PC)[0]
+    current_stacks = anarchy_attr.GetValue(PC)[0]
+    anarchy_attr.SetAttributeBaseValue(PC, min(current_stacks + 10, max_stacks))
+    _Feedback("Added 10 stacks of anarchy")
 
 
 def merge_all_equipped_weapons() -> None:
@@ -109,7 +112,7 @@ class AnyPercentHelper(ModMenu.SDKMod):
     Keybinds = [
         ModMenu.Keybind("Add Buckup Stack", "None", OnPress=add_buckup_stack),
         ModMenu.Keybind("Remove Buckup Stack", "None", OnPress=remove_buckup_stack),
-        ModMenu.Keybind("Add Anarchy Stacks", "None", OnPress=do_10_fake_reloads),
+        ModMenu.Keybind("Add 10 Anarchy Stacks", "None", OnPress=add_anarchy_stacks),
         ModMenu.Keybind("Merge Equipped Weapons", "None", OnPress=merge_all_equipped_weapons),
         ModMenu.Keybind("Add Free Shot Stack", "None", OnPress=add_infinite_ammo_stack),
         ModMenu.Keybind("Remove Free Shot Stack", "None", OnPress=remove_infinite_ammo_stack),
