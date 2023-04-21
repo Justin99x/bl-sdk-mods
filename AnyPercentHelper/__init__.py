@@ -104,7 +104,7 @@ def merge_all_equipped_weapons() -> None:
 class AnyPercentHelper(ModMenu.SDKMod):
     Name: str = "Any% Helper"
     Author: str = "Justin99"
-    Description: str = "TBD"
+    Description: str = "Various utilities for practicing Any% speedruns on current patch"
     Version: str = "1.0.0"
     SupportedGames: ModMenu.Game = ModMenu.Game.BL2
     Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility  # One of Utility, Content, Gameplay, Library; bitwise OR'd together
