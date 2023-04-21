@@ -144,45 +144,24 @@ class AnyPercentHelper(ModMenu.SDKMod):
             self.VladofInfiniteAmmo
         ]
 
-    @ModMenu.Hook('WillowGame.Skill.Resume')
-    def amp_on_skill_resume(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                            params: unrealsdk.FStruct) -> bool:
-        """
-        Adjust damage bonus any time the skill is resumed.
-        """
-        if caller.Definition.Name not in ['Impact_Shield_Skill_Legendary', 'Impact_Shield_Skill']:
-            return True
-        PC = _get_current_player_controller()
-        active_weapon = PC.GetActiveOrBestWeapon()
-        self._apply_full_amp(active_weapon, caller)
-        return True
 
     def _apply_full_amp(self, active_weapon, impact_shield_skill):
         """
-        Apply full amp damage to every pellet. Assumes the skill is already active or about to be resumed. We get the
-        base damage of the weapon with no skill applied, then the damage with the skill applied. Compare that difference
-        to the expected total amp damage and we get our pellet estimate. We replace the skill scale constant with the
-        projectile count to effectively give every pellet full amp damage.
+        Apply full amp damage to every pellet. We replace the skill scale constant with the
+        projectile count to effectively give every pellet full amp damage. Won't work with Gunzerk probably.
         """
 
-        impact_shield_skill.Deactivate()
-        weapon_damage_base = active_weapon.GetMultiProjectileDamage()
-
-        impact_shield_skill.Activate()
-        weapon_damage_impact_base = active_weapon.GetMultiProjectileDamage()
+        projectiles_attr = unrealsdk.FindObject("AttributeDefinition", "D_Attributes.Weapon.WeaponProjectilesPerShot")
+        projectiles = projectiles_attr.GetValue(active_weapon)[0]
 
         weapon_damage_effect = [effect for effect in impact_shield_skill.SkillEffects if
                                 effect.EffectData.AttributeToModify.Name == "WeaponDamage"][0]
-        if weapon_damage_base >= weapon_damage_impact_base:
-            projectiles = 1  # Just reset scale value to default. It will get modified again when skill resumed.
-        else:
-            impact_damage_full = weapon_damage_effect.Modifier.Value
-            impact_damage_split = weapon_damage_impact_base - weapon_damage_base
-            projectiles = round(impact_damage_full / impact_damage_split)
+
         # Just set to 1 if option is turned off
         if not self.FullAmpDamageBoolean.CurrentValue:
             projectiles = 1
         weapon_damage_effect.EffectData.BaseModifierValue.BaseValueScaleConstant = projectiles
+        unrealsdk.Log(projectiles)
         return
 
     @ModMenu.Hook('WillowGame.Skill.Resume')
