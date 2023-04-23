@@ -96,8 +96,7 @@ def merge_all_equipped_weapons() -> None:
     for weapon in weapons:
         if weapon:
             weapon.ApplyAllExternalAttributeEffects()
-            msg = msg + '\n' + (
-                    weapon.DefinitionData.PrefixPartDefinition.PartName + ' ' or '') + weapon.DefinitionData.TitlePartDefinition.PartName
+            msg = msg + '\n' + weapon.GetShortHumanReadableName()
     _Feedback(f"Bonuses from the following weapons are applied: {msg}")
 
 
@@ -105,7 +104,7 @@ class AnyPercentHelper(ModMenu.SDKMod):
     Name: str = "Any% Helper"
     Author: str = "Justin99"
     Description: str = "Various utilities for practicing Any% speedruns on current patch"
-    Version: str = "1.0.0"
+    Version: str = "1.0.1"
     SupportedGames: ModMenu.Game = ModMenu.Game.BL2
     Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility  # One of Utility, Content, Gameplay, Library; bitwise OR'd together
     SaveEnabledState: ModMenu.EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings
@@ -143,7 +142,6 @@ class AnyPercentHelper(ModMenu.SDKMod):
             self.WeaponMerging,
             self.VladofInfiniteAmmo
         ]
-
 
     def _apply_full_amp(self, active_weapon, impact_shield_skill):
         """
