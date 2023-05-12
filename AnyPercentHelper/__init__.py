@@ -84,14 +84,13 @@ class Glitches:
     def _add_skill_definition_instance(self, skill_msg_name, template_obj_str):
         """Create new activated instance of skill definition"""
         cloned_skill = Utilities.clone_obj(skill_msg_name, 'SkillDefinition', template_obj_str)
-
-        old_stacks = len(self.get_skill_stacks(cloned_skill.SkillName))
+        old_stacks = len(self.get_skill_stacks([cloned_skill.SkillName]))
         self.skill_manager.ActivateSkill(self.PC, cloned_skill)
         Utilities.feedback(f"Current {skill_msg_name} stacks: {old_stacks + 1}")
 
     def _remove_skill_definition_instance(self, skill_msg_name, skill_name):
         """Remove one instance of skill definition"""
-        skill_stacks = self.get_skill_stacks(skill_name)
+        skill_stacks = self.get_skill_stacks([skill_name])
         old_stacks = len(skill_stacks)
         if skill_stacks:
             self.skill_manager.DeactivateSkill(self.PC, skill_stacks[0])
