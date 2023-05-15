@@ -1,0 +1,22 @@
+{
+  "mods": [
+    {
+      "name": "Any% Helper",
+      "description": "Utilities for efficient practice of Any% Gaige speedrunning on current patch. Implements glitches present on patch 1.1.",
+      "types": ["Utility"],
+      "supports": ["BL2"],
+      "source": "https://github.com/Justin99x/bl-sdk-mods/tree/main/AnyPercentHelper",
+      "latest": "1.1",
+      "versions": {
+        "1.1": "https://github.com/Justin99x/bl-sdk-mods/raw/main/AnyPercentHelper/AnyPercentHelper.zip"
+      },
+      "requirements": {
+        "Commander": ">=2.1"
+      }
+    }
+  ],
+  "defaults": {
+    "authors": "Justin99",
+    "license": "GNU GPLv3"
+  }
+}
