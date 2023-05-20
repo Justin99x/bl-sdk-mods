@@ -8,7 +8,9 @@ the map instantly.
 
 ## Installation
 1. Make sure the BL2 Python SDK is installed according to https://bl-sdk.github.io/
-2. This mod requires Commander to be installed: https://github.com/mopioid/Borderlands-Commander
+2. This mod has the following dependencies:
+   1. Boderlands Commander: https://github.com/mopioid/Borderlands-Commander
+   2. User Feedback: https://github.com/apple1417/bl-sdk-mods/tree/master/UserFeedback
 3. Extract the AnyPercentHelper.zip file in this repo and copy the AnyPercentHelper folder to binaries/Win32/Mods in
     the game folder
 4. If you plan to use the checkpoint saver, edit the "config.json" file to reflect your local save directory.
@@ -20,6 +22,7 @@ the map instantly.
 Using in game keybinds, add or remove a "stack" of Buck Up.
 
 ### Add anarchy stacks
+
 Adds 10 anarchy stacks, up to the maximum stack cap.
 
 ### Amp damage glitch
