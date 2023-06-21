@@ -2,6 +2,7 @@ import hashlib
 import inspect
 import json
 import os
+import stat
 from typing import cast
 
 import unrealsdk
@@ -205,30 +206,40 @@ class CheckpointSaver:
         """Temp file path to rename current save."""
         temp_file_path = os.path.join(self.save_dir, "temp.sav")
         if os.path.exists(temp_file_path):
+            os.chmod(temp_file_path, stat.S_IWRITE)
             os.remove(temp_file_path)
         return temp_file_path
 
     def get_next_open_save_path(self):
         """Finds next available save number based on files in the save directory. Increments by 1."""
-        i = 0
-        while True:
-            i += 1
-            try_new_file_name = f"Save{int(self.current_file_name[4:8]) + i}.sav"
-            if not os.path.exists(os.path.join(self.save_dir, try_new_file_name)):
-                new_file_name = try_new_file_name
-                break
 
-        return os.path.join(self.save_dir, new_file_name)
+        path_num = int(self.current_file_name[4:8], 16)
+        while True:
+            path_num = path_num+1
+
+            filepath = f"Save{path_num:x}".zfill(4).upper() + ".sav"
+            if not os.path.exists(os.path.join(self.save_dir, filepath)):
+                break
+        return os.path.join(self.save_dir, filepath)
 
     def save_game_copy(self):
         """Saves current game state as read only, preserving previous file."""
-        os.chmod(self.current_file_path, 0o444)  # Set to read only
-        os.rename(self.current_file_path, self.new_file_path)  # Rename current save
+        os.chmod(self.current_file_path, stat.S_IREAD)  # Set to read only
+        os.rename(self.current_file_path, self.temp_file_path)  # Rename current save
 
+        current_save_name = self.PC.GetPlayerUINamePreference()
         self.PC.SetPlayerUINamePreference(self.new_save_name)
+        self.PC.SaveGame()  # Saves a new copy
+        os.chmod(self.current_file_path, stat.S_IREAD)  # Set new file read only
 
-        self.PC.SaveGame()  # Saves a new copy with the old name
-        os.chmod(self.current_file_path, 0o444)  # Set new file read only
+        # Rename files
+        unrealsdk.Log(self.new_file_path)
+        os.rename(self.current_file_path, self.new_file_path)
+        os.rename(self.temp_file_path, self.current_file_path)
+
+        # Set name back to previous
+        self.PC.SetPlayerUINamePreference(current_save_name)
+
 
     def get_game_state(self):
         """Gets the current state of the game for values that cannot be saved in the game save file."""
@@ -252,7 +263,7 @@ class CheckpointSaver:
         return state
 
     def save_checkpoint(self):
-        """Saves game and game state with the hash of the save file. MUST be called after the checkpoint is saved."""
+        """Saves game and game state with the hash of the save file."""
         self.save_game_copy()
         state = self.get_game_state()
         unrealsdk.Log(state)
@@ -264,7 +275,7 @@ class CheckpointSaver:
             existing = {}
 
         # Set state data by hash value of the save file
-        existing[Utilities.get_hash(self.current_file_path)] = state
+        existing[Utilities.get_hash(self.new_file_path)] = state
         with open(_STATE_PATH, "w") as f:
             json.dump(existing, f)
 
@@ -274,7 +285,6 @@ class CheckpointSaver:
         with open(_STATE_PATH, "r") as f:
             states = json.load(f)
         if not states.get(hash):
-            unrealsdk.Log(hash)
             Utilities.feedback("No game state data found for this save file")
             return
         return states.get(hash)
@@ -327,8 +337,8 @@ class SaveNameInput(TextInputBox):
 class AnyPercentHelper(ModMenu.SDKMod):
     Name: str = "Any% Helper"
     Author: str = "Justin99"
-    Description: str = "Various utilities for practicing Any% speedruns on current patch"
-    Version: str = "1.1.0"
+    Description: str = "Various utilities for practicing Any% Gaige speedruns on current patch"
+    Version: str = "1.2.0"
     SupportedGames: ModMenu.Game = ModMenu.Game.BL2
     Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility  # One of Utility, Content, Gameplay, Library; bitwise OR'd together
     SaveEnabledState: ModMenu.EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings
@@ -419,6 +429,14 @@ class AnyPercentHelper(ModMenu.SDKMod):
             glitches.handle_jakobs_auto(new_value)
         if option == self.DisableExpansionTravel:
             self.handle_expansion_fast_travel()
+
+    @ModMenu.Hook("Engine.Actor.TriggerGlobalEventClass")
+    def set_pickup_radius(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
+                          params: unrealsdk.FStruct) -> bool:
+        """Mimic version 1.1 behavior on bulk pickup radius"""
+        if params.InEventClass.Name == 'WillowSeqEvent_PlayerJoined':
+            Utilities.get_current_player_controller().ConsoleCommand(f"set GD_Globals.General.Globals PickupRadius 200")
+        return True
 
     @ModMenu.Hook("Engine.Actor.TriggerGlobalEventClass")
     def load_previous_equipped_weapon(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
