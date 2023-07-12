@@ -60,7 +60,7 @@ for practice. Just turn this option on and rebind fire to whatever key you plan 
 ### DLC expansions removed from Fast Travel
 
 Only base game destination appear in Fast Travel, similar to patch 1.1. I was unable to figure out how to remove the
-"Borderlands 2" header. This only matters when leaving Bloodshot Ramparts the End of the Line maps. In patch 1.1,
+"Borderlands 2" header. This only matters when leaving no U-turn maps. In patch 1.1,
 Sanctuary is already selected, but on current patch with this mod, you'll have to hit down arrow once to get back to
 Sanctuary.
 
@@ -96,7 +96,30 @@ the following actions occur:
 The game states are loaded according to the hash of the save file. It will not work if the save file is changed in any
 way (e.g. by disabling read only)
 
+### Randomize gear
+
+A keybind can be set that randomizes your shotgun and shield based on your current story progress and the 
+vendors you would have checked at that point. When the keybind is pressed, all jakobs shotguns and amp and turtle
+shields are dropped in front of you, and new gear from the vendor item pools are equipped or put into your inventory.
+
+The purpose of this is to be able to practice sections of the game with a wide variety of RNG based gear that you would
+likely encounter during normal runs.
+
+Specifically, each of the following items are rolled:
+- Frostburn - always get a white Turtle shield
+- Sanctuary level 8-10 - always get a Jakobs shotgun with a Jakobs, Bandit, or Torgue barrel
+- Fridge level 13-14 - always get an amp shield with at least 100 damage
+- Overlook level 14-16 - always get a Jakobs shotgun with a Jakobs, Bandit, or Torgue barrel
+- Hyperion Bridge - one attempt to get an amp shield with at least 25 more damage than existing amp
+- Wildlife - one attempt to get an amp shield with at least 25 more damage than existing amp
+- Thousand Cuts - one attempt to get an amp shield with at least 25 more damage than existing amp
+
+If at any point an amp shield with damage >= 175 is obtained, no more shield vendors are checked.
+
 ## Changelog
+
+### Version 1.3
+- Added gear randomizer keybind.
 
 ### Version 1.2
 

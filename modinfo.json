@@ -6,7 +6,7 @@
       "types": ["Utility"],
       "supports": ["BL2"],
       "source": "https://github.com/Justin99x/bl-sdk-mods/tree/main/AnyPercentHelper",
-      "latest": "1.1",
+      "latest": "1.3",
       "versions": {
         "1.1": "https://github.com/Justin99x/bl-sdk-mods/raw/main/AnyPercentHelper/AnyPercentHelper.zip"
       },
