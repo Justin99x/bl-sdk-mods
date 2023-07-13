@@ -2,14 +2,14 @@ import zipfile
 import os
 
 
-def zip_dir(dir_name: str, files_to_add: list):
+def zip_dir(dir_name: str):
     zip_file_name = os.path.join(dir_name, f"{dir_name}.zip")
     zip_file = zipfile.ZipFile(zip_file_name, mode='w')
 
     try:
         for root, dirs, files in os.walk(dir_name):
             for file in files:
-                if file in files_to_add:
+                if ".zip" not in file:
                     file_path = os.path.join(root, file)
                     zip_file.write(file_path)
     finally:
@@ -17,5 +17,5 @@ def zip_dir(dir_name: str, files_to_add: list):
 
 
 if __name__ == '__main__':
-    zip_dir("AnyPercentHelper", ['__init__.py', 'config.json', 'README.md'])
-    zip_dir("DisableAchievements", ['__init__.py'])
+    zip_dir("AnyPercentHelper")
+    zip_dir("DisableAchievements")
