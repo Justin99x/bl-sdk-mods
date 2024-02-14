@@ -2,7 +2,7 @@ from random import choice, choices
 from typing import List, Tuple
 
 import unrealsdk
-from Mods.AnyPercentHelper.utilities import Utilities
+from Mods.SpeedrunPractice.utilities import Utilities
 
 SHOTGUNS = [
     ('Sanctuary', [8, 9, 10], True, 'Sanctuary'),
@@ -37,6 +37,9 @@ class GearRandomizer:
                                                  'GD_ItemPools_Shop.Items.Shoppool_Weapons_FlatChance')
         shotgun_featured_pool = unrealsdk.FindObject('ItemPoolDefinition',
                                                      'GD_ItemPools_Shop.WeaponPools.Shoppool_FeaturedItem_WeaponMachine')
+        self.sanctuary_shotgun_pool = unrealsdk.FindObject('ItemPoolDefinition',
+                                                      'GD_Itempools.WeaponPools.Pool_Weapons_Shotguns_02_Uncommon')
+
         self.turtle_shield_kwargs = {
             "flat_pool": health_flat_pool,
             "featured_pool": health_featured_pool,
@@ -55,6 +58,7 @@ class GearRandomizer:
             "qualifying_func": self.is_jakobs_multi_barrel,
             "sort_func": self.get_impact_damage
         }
+
 
     def evaluate_probability(self, attrib_init_data: unrealsdk.FStruct):
         """Evaluate Probability (which is really a weight) from BalancedItems Array"""
@@ -145,6 +149,10 @@ class GearRandomizer:
         barrels = ['SG_Barrel_Bandit', 'SG_Barrel_Jakobs', 'SG_Barrel_Torgue']
         return weapon.DefinitionData.WeaponTypeDefinition.Name == 'WT_Jakobs_Shotgun' and weapon.DefinitionData.BarrelPartDefinition.Name in barrels
 
+    def is_probably_sanctuary_shotgun(self, weapon):
+        return weapon.DefinitionData.WeaponTypeDefinition.WeaponType == 1 and weapon.DefinitionData.GameStage == 6
+
+
     def get_total_damage(self, weapon):
         projectiles_attr = unrealsdk.FindObject("AttributeDefinition", "D_Attributes.Weapon.WeaponProjectilesPerShot")
         projectiles = projectiles_attr.GetValue(weapon)[0]
@@ -181,18 +189,15 @@ class GearRandomizer:
     def get_game_stage(self, item):
         return item.DefinitionData.GameStage
 
-    def filter_gear(self, items):
-        item_to_equip = max([item for item in items if self.get_game_stage(item) <= self.level],
-                            key=self.get_game_stage)
-        overlevel_items = [item for item in items if self.get_game_stage(item) > self.level]
-        return item_to_equip, overlevel_items
 
-    def filter_gear(self, items_msgs: Tuple[List, List]) -> Tuple[Tuple, List[Tuple]]:
+    def filter_gear(self, items_msgs: List[Tuple]) -> Tuple:
 
         usable_items = [(item, msg) for item, msg in items_msgs if self.get_game_stage(item) <= self.level]
         overlevel_items = [(item, msg) for item, msg in items_msgs if self.get_game_stage(item) > self.level]
 
-        item_to_equip = max(usable_items, key=lambda x: self.get_game_stage(x[0]))
+        item_to_equip = (None, '')
+        if usable_items:
+            item_to_equip = max(usable_items, key=lambda x: self.get_game_stage(x[0]))
 
         # Log to console
         unrealsdk.Log(item_to_equip[1])
@@ -205,7 +210,7 @@ class GearRandomizer:
         items = []
         msgs = []
         for vendor in vendors:
-            if vendor[0] in self.maps:
+            if vendor[0] in self.maps and not (vendor[0] == 'Sanctuary' and self.level < 10):
                 item = self.get_inventory_from_vendor(vendor[1], vendor[2], **kwargs)
                 if item:
                     items.append(item)
@@ -213,11 +218,19 @@ class GearRandomizer:
                         f'{rarity.get(item.GetRarityLevel(), "Unknown")} Level {item.GetGameStage()} {item.GetShortHumanReadableName()} from vendor in {vendor[3]}')
         return list(zip(items, msgs))
 
+    def get_sanctuary_shotgun(self):
+        shotgun = []
+        msg = []
+        if self.PC.GetActivePlotCriticalMissionNumber() >= 5:
+            shotgun = self.get_items_from_pool(self.sanctuary_shotgun_pool, 1, [6])
+            msg = f'Green Level 6 {shotgun[0].GetShortHumanReadableName()} from Sanctuary mission turn in'
+        return list(zip(shotgun, [msg]))
+
     def throw_old_gear(self):
         inventory_manager = self.PC.GetPawnInventoryManager()
         all_weapons = unrealsdk.FindAll('WillowWeapon')
         for weapon in all_weapons:
-            if weapon.Owner == self.PC.pawn and self.is_jakobs_multi_barrel(weapon):
+            if weapon.Owner == self.PC.pawn and (self.is_jakobs_multi_barrel(weapon) or self.is_probably_sanctuary_shotgun(weapon)):
                 if weapon in inventory_manager.GetEquippedWeapons():
                     self.PC.pawn.TossInventory(weapon)
                 else:
@@ -231,11 +244,11 @@ class GearRandomizer:
 
     def randomize_gear(self):
         try:
-            holding_shotgun = (self.PC.pawn.Weapon.DefinitionData.WeaponTypeDefinition.Name == 'WT_Jakobs_Shotgun')
+            holding_shotgun = (self.PC.pawn.Weapon.DefinitionData.WeaponTypeDefinition.WeaponType == 1)
         except:
             holding_shotgun = False
 
-        shotguns = self.cycle_vendors(SHOTGUNS, self.shotgun_kwargs)
+        shotguns = self.cycle_vendors(SHOTGUNS, self.shotgun_kwargs) + self.get_sanctuary_shotgun()
         turtles = self.cycle_vendors(TURTLES, self.turtle_shield_kwargs)
         amps = self.cycle_vendors(AMPS, self.amp_shield_kwargs)
 
@@ -246,8 +259,10 @@ class GearRandomizer:
         equip_shield, overlevel_shields = self.filter_gear(turtles + amps)
 
         inv_manager = self.PC.GetPawnInventoryManager()
-        inv_manager.AddInventory(equip_shotgun, holding_shotgun)
-        inv_manager.AddInventory(equip_shield, True)
+        if equip_shotgun:
+            inv_manager.AddInventory(equip_shotgun, holding_shotgun)
+        if equip_shield:
+            inv_manager.AddInventory(equip_shield, True)
         for sg in overlevel_shotguns:
             inv_manager.AddInventory(sg, False)
         for sh in overlevel_shields:

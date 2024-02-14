@@ -1,17 +1,17 @@
-
 import importlib
 import inspect
 import os
+from typing import Callable
 
 import unrealsdk
 import Mods
 from Mods import ModMenu
-from Mods.Commander import _ApplyPosition, _GetPosition
+
 from Mods.UserFeedback import TextInputBox
-from Mods.AnyPercentHelper.checkpoints import CheckpointSaver, SaveNameInput
-from Mods.AnyPercentHelper.glitch_manager import GlitchManager
-from Mods.AnyPercentHelper.utilities import Utilities
-from Mods.AnyPercentHelper.randomize_gear import GearRandomizer
+from Mods.SpeedrunPractice.checkpoints import CheckpointSaver, SaveNameInput
+from Mods.SpeedrunPractice.glitch_manager import GlitchManager
+from Mods.SpeedrunPractice.utilities import Utilities
+from Mods.SpeedrunPractice.randomize_gear import GearRandomizer
 
 _DefaultGameInfo = unrealsdk.FindObject("WillowCoopGameInfo", "WillowGame.Default__WillowCoopGameInfo")
 _MODDIR = os.path.dirname(os.path.abspath(inspect.getsourcefile(lambda: None)))
@@ -19,7 +19,7 @@ _CONFIG_PATH = os.path.join(_MODDIR, 'config.json')
 _STATE_PATH = os.path.join(_MODDIR, 'state.json')
 
 
-class AnyPercentHelper(ModMenu.SDKMod):
+class SpeedrunPractice(ModMenu.SDKMod):
     Name: str = "Any% Helper"
     Author: str = "Justin99"
     Description: str = "Various utilities for practicing Any% speedruns on current patch"
@@ -29,11 +29,11 @@ class AnyPercentHelper(ModMenu.SDKMod):
     SaveEnabledState: ModMenu.EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings
 
     Keybinds = [
-        ModMenu.Keybind("Add Buckup Stack", "None"),
-        ModMenu.Keybind("Remove Buckup Stack", "None"),
-        ModMenu.Keybind("Add 10 Anarchy Stacks", "None"),
-        ModMenu.Keybind("Add Free Shot Stack", "None"),
-        ModMenu.Keybind("Remove Free Shot Stack", "None"),
+        ModMenu.Keybind("Set Buckup Stacks", "None"),
+        ModMenu.Keybind("Set Anarchy Stacks", "None"),
+        ModMenu.Keybind("Set Free Shot Stacks", "None"),
+        ModMenu.Keybind("Set Smasher Chance Stacks", "None"),
+        ModMenu.Keybind("Set Smasher SMASH Stacks", "None"),
         ModMenu.Keybind("Merge Equipped Weapons", "None"),
         ModMenu.Keybind("Save Checkpoint", "None"),
         ModMenu.Keybind("Load Checkpoint State", "None"),
@@ -41,20 +41,35 @@ class AnyPercentHelper(ModMenu.SDKMod):
         ModMenu.Keybind("Randomize Gear!", "None")
     ]
 
+    def handle_stacks(self, func: Callable[[int, str], None], title: str, ref: str = '') -> None:
+        """Handle input box creation for various actions"""
+        input_box = TextInputBox(title, PausesGame=True)
+
+        def OnSubmit(msg: str) -> None:
+            target_val = Utilities.try_parse_int(msg)
+            if target_val >= 0:
+                func(target_val, ref)
+            else:
+                unrealsdk.Log("1")
+                Utilities.feedback("Value must be greater than 0")
+
+        input_box.OnSubmit = OnSubmit
+        input_box.Show()
+
     def GameInputPressed(self, input) -> None:
         """Handle methods that need the class instance here"""
         glitches = GlitchManager()
 
-        if input.Name == "Add Buckup Stack":
-            glitches.add_buckup_stack()
-        elif input.Name == "Remove Buckup Stack":
-            glitches.remove_buckup_stack()
-        elif input.Name == "Add 10 Anarchy Stacks":
-            glitches.add_10_anarchy_stacks()
-        elif input.Name == "Add Free Shot Stack":
-            glitches.add_infinite_ammo_stack()
-        elif input.Name == "Remove Free Shot Stack":
-            glitches.remove_infinite_ammo_stack()
+        if input.Name == "Set Buckup Stacks":
+            self.handle_stacks(glitches.set_skill_stacks, input.Name, "GD_Tulip_DeathTrap.Skills.Skill_ShieldBoost_Player")
+        elif input.Name == "Set Anarchy Stacks":
+            self.handle_stacks(glitches.set_anarchy_stacks, input.Name)
+        elif input.Name == "Set Free Shot Stacks":
+            self.handle_stacks(glitches.set_skill_stacks, input.Name, "GD_Weap_Launchers.Skills.Skill_VladofHalfAmmo")
+        elif input.Name == "Set Smasher Chance Stacks":
+            self.handle_stacks(glitches.set_skill_stacks, input.Name, "GD_Weap_AssaultRifle.Skills.Skill_EvilSmasher")
+        elif input.Name == "Set Smasher SMASH Stacks":
+            self.handle_stacks(glitches.set_skill_stacks, input.Name, "GD_Weap_AssaultRifle.Skills.Skill_EvilSmasher_SMASH")
         elif input.Name == "Merge Equipped Weapons":
             glitches.merge_all_equipped_weapons()
         elif input.Name == "Save Checkpoint":
@@ -69,28 +84,10 @@ class AnyPercentHelper(ModMenu.SDKMod):
             gear_randomizer = GearRandomizer()
             gear_randomizer.randomize_gear()
 
+
     def __init__(self):
         self.expansions = []
         self.block_remove_attribute = False
-        self.block_deactivate_half_ammo = False
-        self.FullAmpDamageBoolean = ModMenu.Options.Boolean(
-            Caption="Full Amp Damage",
-            Description="Applies full amp damage to every projectile on multi-projectile weapons",
-            StartingValue=True,
-            Choices=("Off", "On")
-        )
-        self.WeaponMerging = ModMenu.Options.Boolean(
-            Caption="Weapon Merging",
-            Description="Allows weapon merging to stack bonuses from multiple weapons",
-            StartingValue=True,
-            Choices=("Off", "On")
-        )
-        self.VladofInfiniteAmmo = ModMenu.Options.Boolean(
-            Caption="Infinite Ammo Stacking",
-            Description="Allows using a Vladof launcher to stack infinite ammo",
-            StartingValue=True,
-            Choices=("Off", "On")
-        )
         self.JakobsAutoFire = ModMenu.Options.Boolean(
             Caption="Automatic Jakobs Shotguns",
             Description="Makes Jakobs shotguns automatic to mimic freescroll macro functionality",
@@ -104,9 +101,6 @@ class AnyPercentHelper(ModMenu.SDKMod):
             Choices=("Off", "On")
         )
         self.Options = [
-            self.FullAmpDamageBoolean,
-            self.WeaponMerging,
-            self.VladofInfiniteAmmo,
             self.JakobsAutoFire,
             self.DisableExpansionTravel,
         ]
@@ -124,18 +118,9 @@ class AnyPercentHelper(ModMenu.SDKMod):
                           params: unrealsdk.FStruct) -> bool:
         """Mimic version 1.1 behavior on bulk pickup radius"""
         if params.InEventClass.Name == 'WillowSeqEvent_PlayerJoined':
-            Utilities.get_current_player_controller().ConsoleCommand(f"set GD_Globals.General.Globals PickupRadius 200")
-        return True
-
-    @ModMenu.Hook("Engine.Actor.TriggerGlobalEventClass")
-    def load_previous_equipped_weapon(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                                      params: unrealsdk.FStruct) -> bool:
-        """Bypasses usual behavior or 2nd weapon picked up being equipped on load"""
-        if params.InEventClass.Name == 'WillowSeqEvent_PlayerJoined':
-            checkpoint_saver = CheckpointSaver(None)
-            game_state = checkpoint_saver.get_game_state_from_state_file()
-            if game_state:
-                checkpoint_saver.PC.EquipWeaponFromSlot(game_state['active_weapon'])
+            PC = Utilities.get_current_player_controller()
+            PC.ConsoleCommand(f"set GD_Globals.General.Globals PickupRadius 200")
+            PC.ConsoleCommand(f"set Behavior_ActivateSkill bNoSkillStacking False")
         return True
 
     def handle_expansion_fast_travel(self):
@@ -162,11 +147,12 @@ class AnyPercentHelper(ModMenu.SDKMod):
     @ModMenu.Hook('WillowGame.WillowPlayerController.SaveGame')
     def enable_divide_fast_travel(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
                                   params: unrealsdk.FStruct) -> bool:
-        """Enables Three Horns Divide FT as soon as Sanctuary is reached, allows skipping station like in patch 1.1"""
-        if 'Sanctuary' in caller.ActivatedTeleportersList and 'IceEast' not in caller.ActivatedTeleportersList:
-            temp = list(caller.ActivatedTeleportersList)
-            temp.append('IceEast')
-            caller.ActivatedTeleportersList = temp
+        """Enables Three Horns Divide FT as soon as Divide mission reached, allows skipping station like in patch 1.1"""
+        if 'IceEast' not in caller.ActivatedTeleportersList:
+            if caller.GetActivePlotCriticalMissionNumber() >= 4:
+                temp = list(caller.ActivatedTeleportersList)
+                temp.append('IceEast')
+                caller.ActivatedTeleportersList = temp
         return True
 
     def _apply_full_amp(self, active_weapon, impact_shield_skill):
@@ -180,9 +166,6 @@ class AnyPercentHelper(ModMenu.SDKMod):
         weapon_damage_effect = [effect for effect in impact_shield_skill.SkillEffects if
                                 effect.EffectData.AttributeToModify.Name == "WeaponDamage"][0]
 
-        # Just set to 1 if option is turned off
-        if not self.FullAmpDamageBoolean.CurrentValue:
-            projectiles = 1
         weapon_damage_effect.EffectData.BaseModifierValue.BaseValueScaleConstant = projectiles
         return
 
@@ -216,79 +199,55 @@ class AnyPercentHelper(ModMenu.SDKMod):
                 self._apply_full_amp(caller, skill)
         return True
 
-    @ModMenu.Hook('WillowGame.WillowWeapon.RemoveAllExternalAttributeEffects')
-    def allow_weapon_merging(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                             params: unrealsdk.FStruct) -> bool:
-        """
-        Allow merging weapons to keep crit bonuses, healing, etc. Just block removing attribute effects when changing
-        weapons in inventory and a pending weapon exists (happens when entering inventory mid-swap)
-        """
-        if not self.WeaponMerging.CurrentValue:
-            return True
-        PC = Utilities.get_current_player_controller()
-        inv_manager = PC.GetPawnInventoryManager()
+    @ModMenu.Hook('WillowGame.WillowPlayerController.ModalGameMenuOpening')
+    def hook_menu_open(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction, params: unrealsdk.FStruct) -> bool:
+        """Allow merging weapons to keep crit bonuses, healing, etc. This follows the exact logic that made
+        the glitch possible in the first place. They later added the ForePutDownInactiveWeapon call to the
+        ModalGameMenuOpening method to fix it, so we're just blocking it."""
 
-        if PC.bStatusMenuOpen and inv_manager.PendingWeapon:
+        def block_putdown(caller: unrealsdk.UObject, function: unrealsdk.UFunction, params: unrealsdk.FStruct) -> bool:
             return False
-        return True
 
-    """
-    Next 3 hooks are all to replicate infinite ammo glitch from Vladof launcher. Don't have enough information in
-    just the deactivate skill hook to tell whether to block it or not. We're looking for whether we just equipped or
-    just dropped the weapon, in which case we block the deactivation. The drop is due to the method being called twice
-    for some unknown reason.
-    """
+        unrealsdk.RunHook('WillowGame.WillowWeapon.ForcePutDownInactiveWeapon', 'block_putdown', block_putdown)
+        caller.ModalGameMenuOpening()
+        unrealsdk.RemoveHook('WillowGame.WillowWeapon.ForcePutDownInactiveWeapon', 'block_putdown')
+        return False
 
     @ModMenu.Hook('WillowGame.WillowInventoryManager.RemoveFromInventory')
-    def set_dropped_vladof_flag(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                                params: unrealsdk.FStruct) -> bool:
-        """Block if gun dropped"""
-        if params.ItemToRemove.Class.Name == 'WillowWeapon' and params.ItemToRemove.DefinitionData.WeaponTypeDefinition.Name == 'WT_Vladof_Launcher':
-            self.block_deactivate_half_ammo = True
-        return True
-
-    @ModMenu.Hook('WillowGame.WillowWeapon.OnEquip')
-    def set_equipped_vladof_flag(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                                 params: unrealsdk.FStruct) -> bool:
-        """Block on equip."""
-        if caller.DefinitionData.WeaponTypeDefinition.Name == 'WT_Vladof_Launcher':
-            self.block_deactivate_half_ammo = True
-        return True
-
-    @ModMenu.Hook('WillowGame.SkillEffectManager.DeactivateSkill')
-    def block_deactivate_free_shot(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
+    def hook_remove_from_inventory(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
                                    params: unrealsdk.FStruct) -> bool:
-        """Block when the flag is set and reset the flag."""
-        if not self.VladofInfiniteAmmo.CurrentValue:
-            self.block_deactivate_half_ammo = False
-            return True
-        if params.Definition.Name == 'Skill_VladofHalfAmmo':
-            if self.block_deactivate_half_ammo:
-                self.block_deactivate_half_ammo = False
-                return False
-        return True
+        """Allow dropping weapons to keep skill stacks. This follows the exact logic that made
+        the glitch possible in the first place. They later added the OnUnequip call to the
+        RemoveFromInventory method to fix it, so we're just blocking it."""
+
+        def block_onunequip(caller: unrealsdk.UObject, function: unrealsdk.UFunction, params: unrealsdk.FStruct) -> bool:
+            return False
+
+        unrealsdk.RunHook('WillowGame.WillowWeapon.OnUnequip', 'block_onunequip', block_onunequip)
+        caller.RemoveFromInventory(params.ItemToRemove, params.bCanDrop)
+        unrealsdk.RemoveHook('WillowGame.WillowWeapon.OnUnequip', 'block_onunequip')
+        return False
 
     def Enable(self) -> None:
         super().Enable()
-        unrealsdk.Log("AnyPercentHelper Enabled")
+        unrealsdk.Log("SpeedrunPractice Enabled")
 
     def Disable(self) -> None:
-        unrealsdk.Log("AnyPercentHelper Disabled")
+        unrealsdk.Log("SpeedrunPractice Disabled")
         super().Disable()
 
 
-instance = AnyPercentHelper()
+instance = SpeedrunPractice()
 
 if __name__ == "__main__":
-    importlib.reload(Mods.AnyPercentHelper.utilities)
-    importlib.reload(Mods.AnyPercentHelper.glitch_manager)
-    importlib.reload(Mods.AnyPercentHelper.checkpoints)
-    importlib.reload(Mods.AnyPercentHelper.randomize_gear)
-    from Mods.AnyPercentHelper.checkpoints import CheckpointSaver, SaveNameInput
-    from Mods.AnyPercentHelper.glitch_manager import GlitchManager
-    from Mods.AnyPercentHelper.utilities import Utilities
-    from Mods.AnyPercentHelper.randomize_gear import GearRandomizer
-
+    importlib.reload(Mods.SpeedrunPractice.utilities)
+    importlib.reload(Mods.SpeedrunPractice.glitch_manager)
+    importlib.reload(Mods.SpeedrunPractice.checkpoints)
+    importlib.reload(Mods.SpeedrunPractice.randomize_gear)
+    from Mods.SpeedrunPractice.checkpoints import CheckpointSaver, SaveNameInput
+    from Mods.SpeedrunPractice.glitch_manager import GlitchManager
+    from Mods.SpeedrunPractice.utilities import Utilities
+    from Mods.SpeedrunPractice.randomize_gear import GearRandomizer
 
     unrealsdk.Log(f"[{instance.Name}] Manually loaded")
     for mod in ModMenu.Mods:
