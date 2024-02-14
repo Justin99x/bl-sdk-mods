@@ -46,12 +46,12 @@ class SpeedrunPractice(ModMenu.SDKMod):
         input_box = TextInputBox(title, PausesGame=True)
 
         def OnSubmit(msg: str) -> None:
-            target_val = Utilities.try_parse_int(msg)
-            if target_val >= 0:
-                func(target_val, ref)
-            else:
-                unrealsdk.Log("1")
-                Utilities.feedback("Value must be greater than 0")
+            if msg:
+                target_val = Utilities.try_parse_int(msg)
+                if target_val >= 0:
+                    func(target_val, ref)
+                else:
+                    unrealsdk.Log("Value must be greater than 0")
 
         input_box.OnSubmit = OnSubmit
         input_box.Show()
