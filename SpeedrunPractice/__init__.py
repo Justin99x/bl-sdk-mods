@@ -20,10 +20,10 @@ _STATE_PATH = os.path.join(_MODDIR, 'state.json')
 
 
 class SpeedrunPractice(ModMenu.SDKMod):
-    Name: str = "Any% Helper"
+    Name: str = "Speedrun Practice"
     Author: str = "Justin99"
-    Description: str = "Various utilities for practicing Any% speedruns on current patch"
-    Version: str = "1.3.0"
+    Description: str = "Various utilities for practicing speedruns on current patch"
+    Version: str = "1.4.0"
     SupportedGames: ModMenu.Game = ModMenu.Game.BL2
     Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility  # One of Utility, Content, Gameplay, Library; bitwise OR'd together
     SaveEnabledState: ModMenu.EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings

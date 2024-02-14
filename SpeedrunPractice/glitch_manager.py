@@ -59,7 +59,7 @@ class GlitchManager:
         self.anarchy_attribute_def.SetAttributeBaseValue(self.PC, target_stacks)
 
     def merge_all_equipped_weapons(self) -> None:
-        """Applies external attribute effects from all weapons currently equipped. Used for crit bonus in Any% runs."""
+        """Applies external attribute effects from all weapons currently equipped. Used for crit bonus in runs."""
         weapons = self.inventory_manager.GetEquippedWeapons()
         msg = ''
         for weapon in weapons:
