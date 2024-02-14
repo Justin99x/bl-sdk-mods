@@ -1,3 +1,4 @@
 .idea/
 venv/
 copy_source.sh
+__pycache__
