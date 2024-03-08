@@ -23,7 +23,7 @@ class SpeedrunPractice(ModMenu.SDKMod):
     Name: str = "Speedrun Practice"
     Author: str = "Justin99"
     Description: str = "Various utilities for practicing speedruns on current patch"
-    Version: str = "1.4.0"
+    Version: str = "1.4.1"
     SupportedGames: ModMenu.Game = ModMenu.Game.BL2
     Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility  # One of Utility, Content, Gameplay, Library; bitwise OR'd together
     SaveEnabledState: ModMenu.EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings
@@ -87,7 +87,6 @@ class SpeedrunPractice(ModMenu.SDKMod):
 
     def __init__(self):
         self.expansions = []
-        self.block_remove_attribute = False
         self.JakobsAutoFire = ModMenu.Options.Boolean(
             Caption="Automatic Jakobs Shotguns",
             Description="Makes Jakobs shotguns automatic to mimic freescroll macro functionality",
@@ -116,7 +115,7 @@ class SpeedrunPractice(ModMenu.SDKMod):
     @ModMenu.Hook("Engine.Actor.TriggerGlobalEventClass")
     def set_pickup_radius(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
                           params: unrealsdk.FStruct) -> bool:
-        """Mimic version 1.1 behavior on bulk pickup radius"""
+        """Mimic version 1.1 behavior on bulk pickup radius and skill stacking"""
         if params.InEventClass.Name == 'WillowSeqEvent_PlayerJoined':
             PC = Utilities.get_current_player_controller()
             PC.ConsoleCommand(f"set GD_Globals.General.Globals PickupRadius 200")
@@ -202,7 +201,7 @@ class SpeedrunPractice(ModMenu.SDKMod):
     @ModMenu.Hook('WillowGame.WillowPlayerController.ModalGameMenuOpening')
     def hook_menu_open(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction, params: unrealsdk.FStruct) -> bool:
         """Allow merging weapons to keep crit bonuses, healing, etc. This follows the exact logic that made
-        the glitch possible in the first place. They later added the ForePutDownInactiveWeapon call to the
+        the glitch possible in the first place. They later added the ForcePutDownInactiveWeapon call to the
         ModalGameMenuOpening method to fix it, so we're just blocking it."""
 
         def block_putdown(caller: unrealsdk.UObject, function: unrealsdk.UFunction, params: unrealsdk.FStruct) -> bool:
@@ -234,7 +233,17 @@ class SpeedrunPractice(ModMenu.SDKMod):
 
     def Disable(self) -> None:
         unrealsdk.Log("SpeedrunPractice Disabled")
+        glitches = GlitchManager()
+        # Turn off Jakobs auto
+        glitches.handle_jakobs_auto(False)
+        # Turn off limited travel places, but keep setting for when mod gets enabled again
+        if self.DisableExpansionTravel:
+            self.DisableExpansionTravel.CurrentValue = False
+            self.handle_expansion_fast_travel()
+            self.DisableExpansionTravel.CurrentValue = True
         super().Disable()
+
+
 
 
 instance = SpeedrunPractice()

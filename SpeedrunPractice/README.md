@@ -120,6 +120,9 @@ If at any point an amp shield with damage >= 175 is obtained, no more shield ven
 
 ## Changelog
 
+### Version 1.4.1
+- Fixed issue where travel and Jakobs auto fire were not resetting back to normal state when disabling the mod.
+
 ### Version 1.4
 - Save states are now stored in the save file itself. 
 - Added Evil Smasher stacking so that the mod can be used for All Quests.
