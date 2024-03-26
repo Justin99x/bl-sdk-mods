@@ -183,8 +183,9 @@ class CheckpointSaver:
                 inventory_manager.RemoveFromInventory(weapon)
                 inventory_manager.AddInventory(weapon, False)
             # Set clip sizes
-            weapon.ReloadCnt = load_state[f'weapon{weapon.QuickSelectSlot}_clip']
-            weapon.LastReloadCnt = weapon.ReloadCnt
+            if weapon:
+                weapon.ReloadCnt = load_state[f'weapon{weapon.QuickSelectSlot}_clip']
+                weapon.LastReloadCnt = weapon.ReloadCnt
 
         # Merge weapons
         merge_msg = ''
