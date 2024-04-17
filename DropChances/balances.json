@@ -1,0 +1,6642 @@
+{
+    "GD_Artifacts.A_Item.A_AggressionA": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionA_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionB": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionB_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionC": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionC_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionD": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionD_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionE": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionE_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionF": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AggressionF_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceA": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceA_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceB": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceB_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceC": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceC_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceD": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceD_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceE": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceE_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceF": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceF_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceG": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceG_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceH": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_AllegianceH_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Elemental": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Elemental_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Elemental_Status": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Elemental_Status_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Proficiency": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Proficiency_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Protection": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Protection_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Resistance": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Resistance_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Stockpile": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Stockpile_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Strength": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Strength_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Tenacity": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Tenacity_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Vitality": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item.A_Vitality_Rare": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item_Unique.A_Afterburner": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item_Unique.A_Deputy": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item_Unique.A_Endowment": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item_Unique.A_Opportunity": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item_Unique.A_Sheriff": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item_Unique.A_Terramorphous": [
+        0,
+        9
+    ],
+    "GD_Artifacts.A_Item_Unique.A_VaultHunter": [
+        0,
+        9
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero002": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero009": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero010": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero012": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero013": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero014": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero015": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero016": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero017": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero018": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero025": [
+        6,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero026": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_Zero030": [
+        6,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_ZeroBL1": [
+        6,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_ZeroHJ": [
+        6,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Head_ZeroMC": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BanditA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BanditB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BanditC": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BL1": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BlackA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BlueA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BlueB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BlueC": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BlueD": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BlueE": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BlueF": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BlueG": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_BlueH": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_CyanA": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_CyanB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_CyanC": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_CyanD": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_CyanE": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_CyanF": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_CyanG": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_CyanH": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_DahlA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_DahlB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_DahlC": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_DigitalEd": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_Gearbox": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_GrayA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_GreenA": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_GreenB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_GreenC": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_GreenD": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_GreenE": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_GreenF": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_GreenG": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_GreenH": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_HyperionA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_HyperionB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_HyperionC": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_JakobsA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_JakobsB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_JakobsC": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_MaliwanA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_MaliwanB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_MaliwanC": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_Minecraft": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_OrangeA": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_OrangeB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_OrangeC": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_OrangeD": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_OrangeE": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_OrangeF": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_OrangeG": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_OrangeH": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_PinkA": [
+        6,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_PinkB": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_PinkC": [
+        6,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_PinkD": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_PurpleA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_PurpleB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_PurpleC": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_PurpleD": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_RedA": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_RedB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_RedC": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_RedD": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_RedE": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_RedF": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_RedG": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_RedH": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_TedioreA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_TedioreB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_TedioreC": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_TorgueA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_TorgueB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_TorgueC": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_VladofA": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_VladofB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_VladofC": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_WhiteA": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_YellowA": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_YellowB": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_YellowC": [
+        4,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_YellowD": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_YellowE": [
+        2,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_YellowF": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_YellowG": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_MainGame.BalanceDefs.Assassin_Skin_YellowH": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Blood": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Blue": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_BlueBlk": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_BlueDk": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_BlueLt": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_CamoBlue": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_CamoGrey": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_CamoGrn": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_CamoTan": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_DirtGrey": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_DirtGrng": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_DirtSpl": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_DirtStn": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_F_Burst": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_F_Char": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_F_Infern": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_F_Propan": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Graffiti": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Green": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_GreenBlk": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_GreenDk": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_GreenLt": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_GreyBlk": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_GreyDark": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_GreyLt": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_GreyWht": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_HexBlue": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_HexGrn": [
+        4,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_HexOrng": [
+        4,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_HexPrpl": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_M_Alien": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_M_Blue": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_M_Grey": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_M_White": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Orange": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_OrangeDk": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_OrangeLt": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Paint": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Pink": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_PinkDark": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_PinkLt": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Purple": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_PurpleDk": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_PurpleLt": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Red": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_RedBlk": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_RedDark": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_RedLt": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_RingBlue": [
+        4,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_RingOrng": [
+        4,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_RingPrpl": [
+        4,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_RingRed": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Rust": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_S_BluBlk": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_S_GrnBlk": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_S_RedBlk": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_S_YelBlk": [
+        4,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Terq": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_TerqDark": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_TerqLt": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_WoodBrl": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_WoodEpic": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_WoodOak": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_WoodOld": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_Yellow": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_YellowBk": [
+        2,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_YellowDk": [
+        1,
+        10
+    ],
+    "GD_BanditTech_Items_MainGame.BalanceDefs.BanditTech_Skin_YellowLt": [
+        1,
+        10
+    ],
+    "GD_CustomOneOffs_MainGame.BalanceDefs.Head_HandsomeJack": [
+        4,
+        10
+    ],
+    "GD_GrenadeMods.A_Item.GM_AreaEffect": [
+        1,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_AreaEffect_2_Uncommon": [
+        2,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_AreaEffect_3_Rare": [
+        3,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_AreaEffect_4_VeryRare": [
+        4,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_BouncingBetty": [
+        1,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_BouncingBetty_2_Uncommon": [
+        2,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_BouncingBetty_3_Rare": [
+        3,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_BouncingBetty_4_VeryRare": [
+        4,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Mirv": [
+        1,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Mirv_2_Uncommon": [
+        2,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Mirv_3_Rare": [
+        3,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Mirv_4_VeryRare": [
+        4,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Singularity": [
+        1,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Singularity_2_Uncommon": [
+        2,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Singularity_3_Rare": [
+        3,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Singularity_4_VeryRare": [
+        4,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Standard": [
+        1,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Standard_2_Uncommon": [
+        2,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Standard_3_Rare": [
+        3,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Standard_4_VeryRare": [
+        4,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Transfusion": [
+        1,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Transfusion_2_Uncommon": [
+        2,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Transfusion_3_Rare": [
+        3,
+        7
+    ],
+    "GD_GrenadeMods.A_Item.GM_Transfusion_4_VeryRare": [
+        4,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Custom.GM_BouncingBetty_Uncommon_Bandit": [
+        2,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Custom.GM_FusterCluck": [
+        3,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Custom.GM_KissOfDeath": [
+        3,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Custom.GM_Mirv_Uncommon_Bandit": [
+        2,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Custom.GM_SkyRocket": [
+        0,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Custom.GM_Standard_Uncommon_Bandit": [
+        2,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_BonusPackage": [
+        6,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_BouncingBonny": [
+        6,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_Fastball": [
+        6,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_FireBee": [
+        6,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_FlameSpurt": [
+        5,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_Leech": [
+        6,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_NastySurprise": [
+        6,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_Pandemic": [
+        6,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_Quasar": [
+        6,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_RollingThunder": [
+        6,
+        7
+    ],
+    "GD_GrenadeMods.A_Item_Legendary.GM_StormFront": [
+        6,
+        7
+    ],
+    "GD_ItemGrades.Gear.ItemGrade_Gear_Shield": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_Absorption_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_Booster_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_Chimera_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_Impact_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_Impact_Hyperion_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_Juggernaut_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_Juggernaut_Pangolin_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_NovaAcid_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_NovaExplosive_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_NovaFire_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_NovaShock_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_Roid_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_SpikeAcid_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_SpikeExplosive_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_SpikeFire_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_SpikeShock_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.MissionRewards.ItemGrade_Gear_Shield_Standard_Dahl_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Absorption_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Absorption_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Absorption_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Absorption_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Absorption_05_LegendaryNormal": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Absorption_05_LegendaryShock": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Absorption_1340": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Absorption_Equitas": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Booster_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Booster_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Booster_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Booster_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Booster_05_Legendary": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Booster_PotOGold": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Chimera_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Chimera_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Chimera_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Chimera_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Chimera_05_Legendary": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Impact_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Impact_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Impact_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Impact_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Impact_05_Legendary": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_05_Legendary": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Acid_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Acid_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Acid_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Acid_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Acid_05_Legendary": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Explosive_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Explosive_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Explosive_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Explosive_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Explosive_DeadlyBloom": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Fire_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Fire_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Fire_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Fire_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Fire_05_Legendary": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Phoenix": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Shock_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Shock_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Shock_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Shock_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Shock_05_Legendary": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Nova_Singularity": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Roid_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Roid_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Roid_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Roid_04_LoveThumper": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Roid_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Roid_05_Legendary": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Roid_Order": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Roid_ThresherRaid": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Acid_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Acid_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Acid_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Acid_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Acid_05_Legendary": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_05_Legendary": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Fire_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Fire_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Fire_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Fire_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Fire_05_Legendary": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Shock_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Shock_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Shock_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Shock_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Shock_05_Legendary": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common": [
+        1,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_02_Uncommon": [
+        2,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_03_Rare": [
+        3,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_04_VeryRare": [
+        4,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_05_Legendary": [
+        6,
+        8
+    ],
+    "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_CrackedSash": [
+        4,
+        8
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc001": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc002": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc003": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc004": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc005": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc006": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc007": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc008": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc009": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc010": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc011": [
+        6,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc012": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_Merc013": [
+        6,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_MercBL1": [
+        6,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_MercHJ": [
+        6,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Head_MercMC": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BanditA": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BanditB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BanditC": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BL1": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BlackA": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BlueA": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BlueB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BlueC": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BlueD": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BlueE": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BlueF": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BlueG": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_BlueH": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_CyanA": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_CyanB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_CyanC": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_CyanD": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_CyanE": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_CyanF": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_CyanG": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_CyanH": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_DahlA": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_DahlB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_DahlC": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_DigitalEd": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_Gearbox": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_GrayA": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_GreenA": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_GreenB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_GreenC": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_GreenD": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_GreenE": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_GreenF": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_GreenG": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_GreenH": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_HyperionA": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_HyperionB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_HyperionC": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_JakobsA": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_JakobsB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_JakobsC": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_MaliwanA": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_MaliwanB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_MaliwanC": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_Minecraft": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_OrangeA": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_OrangeB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_OrangeC": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_OrangeD": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_OrangeE": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_OrangeF": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_OrangeG": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_OrangeH": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_PinkA": [
+        6,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_PinkB": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_PinkC": [
+        6,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_PinkD": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_PurpleA": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_PurpleB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_PurpleC": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_PurpleD": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_RedA": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_RedB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_RedC": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_RedD": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_RedE": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_RedF": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_RedG": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_RedH": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_TedioreA": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_TedioreB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_TedioreC": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_TorgueA": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_TorgueB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_TorgueC": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_VladofA": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_VladofB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_VladofC": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_WhiteA": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_YellowA": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_YellowB": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_YellowC": [
+        4,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_YellowD": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_YellowE": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_YellowF": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_YellowG": [
+        1,
+        10
+    ],
+    "GD_Mercenary_Items_MainGame.BalanceDefs.Mercenary_Skin_YellowH": [
+        1,
+        10
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_AreaEffect_1_NoInterp": [
+        1,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_AreaEffect_2_Uncommon_NoInterp": [
+        2,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_BouncingBetty_1_NoInterp": [
+        1,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_BouncingBetty_2_Uncommon_NoInterp": [
+        2,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_Mirv_1_NoInterp": [
+        1,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_Mirv_2_Uncommon_NoInterp": [
+        2,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_Singularity_1_NoInterp": [
+        1,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_Singularity_2_Uncommon_NoInterp": [
+        2,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_Standard_1_NoInterp": [
+        1,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_Standard_2_Uncommon_NoInterp": [
+        2,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_Transfusion_1_NoInterp": [
+        1,
+        7
+    ],
+    "GD_Population_Marauder.ItemBalance.GM_Transfusion_2_Uncommon_NoInterp": [
+        2,
+        7
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Blood": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Blue": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_BlueDk": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_BlueLt": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_BlueScrp": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_CamoBlue": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_CamoGrey": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_CamoGrn": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_CamoTan": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_DirtGrey": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_DirtGrng": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_DirtSpl": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_DirtStn": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_F_Burst": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_F_Char": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_F_Infern": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_F_Propan": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Graffiti": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Green": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_GreenDk": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_GreenLt": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_GreenScrp": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_GreyBlk": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_GreyDark": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_GreyLt": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_GreyWht": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_HexBlue": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_HexGrn": [
+        4,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_HexOrng": [
+        4,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_HexPrpl": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_M_Blue": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_M_Grey": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_M_Purple": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_M_White": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Orange": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_OrangeDk": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_OrangeLt": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Paint": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Pink": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_PinkDark": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_PinkLt": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Purple": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_PurpleDk": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_PurpleLt": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Red": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_RedDark": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_RedLt": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_RedScrp": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_RingBlue": [
+        4,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_RingOrng": [
+        4,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_RingPrpl": [
+        4,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_RingRed": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Rust": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_S_BluBlk": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_S_GrnBlk": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_S_RedBlk": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_S_YelBlk": [
+        4,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Terq": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_TerqDark": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_TerqLt": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_WoodBrl": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_WoodEpic": [
+        3,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_WoodOak": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_WoodOld": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_Yellow": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_YellowDk": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_YellowLt": [
+        1,
+        10
+    ],
+    "GD_Runner_Items_MainGame.BalanceDefs.Runner_Skin_YellowScrp": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren004": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren005": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren007": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren009": [
+        6,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren011": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren015": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren017": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren018": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren022": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren023": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren025": [
+        6,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren028": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_Siren030": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_SirenBL1": [
+        6,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_SirenHJ": [
+        6,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Head_SirenMC": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BanditA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BanditB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BanditC": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BL1": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BlackA": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BlueA": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BlueB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BlueC": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BlueD": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BlueE": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BlueF": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BlueG": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_BlueH": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_CyanA": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_CyanB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_CyanC": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_CyanD": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_CyanE": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_CyanF": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_CyanG": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_CyanH": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_DahlA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_DahlB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_DahlC": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_DigitalEd": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_Gearbox": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_GrayA": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_GreenA": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_GreenB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_GreenC": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_GreenD": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_GreenE": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_GreenF": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_GreenG": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_GreenH": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_HyperionA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_HyperionB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_HyperionC": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_JakobsA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_JakobsB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_JakobsC": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_MaliwanA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_MaliwanB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_MaliwanC": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_Minecraft": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_OrangeA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_OrangeB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_OrangeC": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_OrangeD": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_OrangeE": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_OrangeF": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_OrangeG": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_OrangeH": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_PinkA": [
+        6,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_PinkB": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_PinkC": [
+        6,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_PinkD": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_PurpleA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_PurpleB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_PurpleC": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_PurpleD": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_RedA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_RedB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_RedC": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_RedD": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_RedE": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_RedF": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_RedG": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_RedH": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_TedioreA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_TedioreB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_TedioreC": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_TorgueA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_TorgueB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_TorgueC": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_VladofA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_VladofB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_VladofC": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_WhiteA": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_YellowA": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_YellowB": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_YellowC": [
+        4,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_YellowD": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_YellowE": [
+        2,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_YellowF": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_YellowG": [
+        1,
+        10
+    ],
+    "GD_Siren_Items_MainGame.BalanceDefs.Siren_Skin_YellowH": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier001": [
+        6,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier003": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier004": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier007": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier008": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier013": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier014": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier015": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier016": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier017": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier022": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier038": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_Soldier040": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_SoldierBL1": [
+        6,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_SoldierHJ": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Head_SoldierMC": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BanditA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BanditB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BanditC": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BL1": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BlackA": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BlueA": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BlueB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BlueC": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BlueD": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BlueE": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BlueF": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BlueG": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_BlueH": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_CyanA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_CyanB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_CyanC": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_CyanD": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_CyanE": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_CyanF": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_CyanG": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_CyanH": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_DahlA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_DahlB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_DahlC": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_DigitalEd": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_Gearbox": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_GrayA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_GreenA": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_GreenB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_GreenC": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_GreenD": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_GreenE": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_GreenF": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_GreenG": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_GreenH": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_HyperionA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_HyperionB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_HyperionC": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_JakobsA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_JakobsB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_JakobsC": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_MaliwanA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_MaliwanB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_MaliwanC": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_Minecraft": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_OrangeA": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_OrangeB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_OrangeC": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_OrangeD": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_OrangeE": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_OrangeF": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_OrangeG": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_OrangeH": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_PinkA": [
+        6,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_PinkB": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_PinkC": [
+        6,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_PinkD": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_PurpleA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_PurpleB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_PurpleC": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_PurpleD": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_RedA": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_RedB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_RedC": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_RedD": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_RedE": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_RedF": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_RedG": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_RedH": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_TedioreA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_TedioreB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_TedioreC": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_TorgueA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_TorgueB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_TorgueC": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_VladofA": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_VladofB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_VladofC": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_WhiteA": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_YellowA": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_YellowB": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_YellowC": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_YellowD": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_YellowE": [
+        2,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_YellowF": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_YellowG": [
+        1,
+        10
+    ],
+    "GD_Soldier_Items_MainGame.BalanceDefs.Soldier_Skin_YellowH": [
+        1,
+        10
+    ],
+    "GD_Assassin_Items_allium.BalanceDefs.Assassin_Head_Snowman": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_allium.BalanceDefs.Assassin_Head_Turkey": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_allium.BalanceDefs.Assassin_Skin_Pilgrim": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_allium.BalanceDefs.Assassin_Skin_Xmas": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_allium.BalanceDefs.Mechro_Head_Snowman": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_allium.BalanceDefs.Mechro_Head_Turkey": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_allium.BalanceDefs.Mechro_Skin_Thanks": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_allium.BalanceDefs.Mechro_Skin_Xmas": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_allium.BalanceDefs.Mercenary_Head_Snowman": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_allium.BalanceDefs.Mercenary_Head_Turkey": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_allium.BalanceDefs.Mercenary_Skin_Thanks": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_allium.BalanceDefs.Mercenary_Skin_Xmas": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_allium.BalanceDefs.Psycho_Head_Snowman": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_allium.BalanceDefs.Psycho_Head_Turkey": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_allium.BalanceDefs.Psycho_Skin_Thanks": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_allium.BalanceDefs.Psycho_Skin_Xmas": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_allium.BalanceDefs.Siren_Head_Snowman": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_allium.BalanceDefs.Siren_Head_Turkey": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_allium.BalanceDefs.Siren_Skin_Thanks": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_allium.BalanceDefs.Siren_Skin_Xmas": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_allium.BalanceDefs.Soldier_Head_Snowman": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_allium.BalanceDefs.Soldier_Head_Turkey": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_allium.BalanceDefs.Soldier_Skin_Thanks": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_allium.BalanceDefs.Soldier_Skin_Xmas": [
+        3,
+        10
+    ],
+    "GD_Anemone_Balance_Treasure.Shields.ItemGrade_Gear_Shield_Worming": [
+        9,
+        8
+    ],
+    "GD_Anemone_GrenadeMods.A_Item.GM_Standard_3_Rare_Flamer": [
+        3,
+        7
+    ],
+    "GD_Anemone_GrenadeMods.A_Item_Legendary.GM_Antifection": [
+        9,
+        7
+    ],
+    "GD_Anemone_GrenadeMods.A_Item_Legendary.GM_Antifection_Turret": [
+        9,
+        7
+    ],
+    "GD_Anemone_GrenadeMods.A_Item_Legendary.GM_StormFront": [
+        9,
+        7
+    ],
+    "GD_Anemone_ItemPools.Shields.ItemGrade_Gear_Shield_Nova_Singularity_Peak": [
+        9,
+        8
+    ],
+    "GD_Anemone_Relics.A_Item.A_Elemental_Status_Rare": [
+        0,
+        9
+    ],
+    "GD_Anemone_Relics.A_Item_Unique.A_Deputy": [
+        0,
+        9
+    ],
+    "GD_Anemone_Relics.A_Item_Unique.A_Sheriff": [
+        0,
+        9
+    ],
+    "GD_Assassin_Items_Anemone.BalanceDefs.Assassin_Head_ZeroHaz": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Anemone.BalanceDefs.Assassin_Skin_ZeroAne": [
+        3,
+        10
+    ],
+    "GD_BanditTech_Items_Anemone.BalanceDefs.BanditTech_Skin_Effer": [
+        9,
+        10
+    ],
+    "GD_BanditTech_Items_Anemone.BalanceDefs.BanditTech_Skin_Infect": [
+        4,
+        10
+    ],
+    "GD_BanditTech_Items_Anemone.BalanceDefs.BanditTech_Skin_PinUp": [
+        6,
+        10
+    ],
+    "GD_Mechro_Items_Anemone.BalanceDefs.Mechro_Head_MechroHaz": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Anemone.BalanceDefs.Mechro_Skin_MechroAne": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_Mechro001": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_Mechro002": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_Mechro005": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_Mechro009": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_Mechro016": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_Mechro018": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_Mechro026": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_Mechro035": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_Mechro040": [
+        6,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_MechroHJ": [
+        6,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Head_MechroMC": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_BanditA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_BanditB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_BanditC": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_BlackA": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_BlueA": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_BlueB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_BlueC": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_BlueD": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_BlueE": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_CyanA": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_CyanB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_CyanC": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_CyanD": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_CyanE": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_DahlA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_DahlB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_DahlC": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_Gearbox": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_GrayA": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_GreenA": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_GreenB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_GreenC": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_GreenD": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_GreenE": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_HyperionA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_HyperionB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_HyperionC": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_JakobsA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_JakobsB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_JakobsC": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_MaliwanA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_MaliwanB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_MaliwanC": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_Minecraft": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_OrangeA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_OrangeB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_OrangeC": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_OrangeD": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_OrangeE": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_PinkA": [
+        6,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_PinkB": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_PinkC": [
+        6,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_PinkD": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_PurpleA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_PurpleB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_PurpleC": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_PurpleD": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_RedA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_RedB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_RedC": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_RedD": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_RedE": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_TedioreA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_TedioreB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_TedioreC": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_TorgueA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_TorgueB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_TorgueC": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_VladofA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_VladofB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_VladofC": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_WhiteA": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_YellowA": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_YellowB": [
+        2,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_YellowC": [
+        4,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_YellowD": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Tulip.BalanceDefs.Mechro_Skin_YellowE": [
+        2,
+        10
+    ],
+    "GD_Mercenary_Items_Anemone.BalanceDefs.Mercenary_Head_MercHaz": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Anemone.BalanceDefs.Mercenary_Skin_MercAne": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Anemone.BalanceDefs.Psycho_Head_PsychHaz": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Anemone.BalanceDefs.Psycho_Skin_PsychAne": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho002": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho003": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho004": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho005": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho006": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho007": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho008": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho010": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho011": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho012": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho_DLC1": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho_DLC2": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_Psycho_DLC3": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_PsychoJack": [
+        6,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Head_PsychoMC": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_BanditA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_BanditB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_BanditC": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_BlackA": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_BlueA": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_BlueB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_BlueC": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_BlueD": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_BlueE": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_CyanA": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_CyanB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_CyanC": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_CyanD": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_CyanE": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_DahlA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_DahlB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_DahlC": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_Gearbox": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_GrayA": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_GreenA": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_GreenB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_GreenC": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_GreenD": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_GreenE": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_HyperionA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_HyperionB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_HyperionC": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_JakobsA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_JakobsB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_JakobsC": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_MaliwanA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_MaliwanB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_MaliwanC": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_Minecraft": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_OrangeA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_OrangeB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_OrangeC": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_OrangeD": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_OrangeE": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_PinkA": [
+        6,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_PinkB": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_PinkC": [
+        6,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_PinkD": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_PurpleA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_PurpleB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_PurpleC": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_PurpleD": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_RedA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_RedB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_RedC": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_RedD": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_RedE": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_TedioreA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_TedioreB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_TedioreC": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_TorgueA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_TorgueB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_TorgueC": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_Tribal": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_VladofA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_VladofB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_VladofC": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_WhiteA": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_YellowA": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_YellowB": [
+        2,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_YellowC": [
+        4,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_YellowD": [
+        1,
+        10
+    ],
+    "GD_Psycho_Items_Lilac.BalanceDefs.Psycho_Skin_YellowE": [
+        2,
+        10
+    ],
+    "GD_Runner_Items_Anemone.BalanceDefs.Runner_Skin_Effer": [
+        9,
+        10
+    ],
+    "GD_Runner_Items_Anemone.BalanceDefs.Runner_Skin_Infect": [
+        4,
+        10
+    ],
+    "GD_Runner_Items_Anemone.BalanceDefs.Runner_Skin_PinUp": [
+        6,
+        10
+    ],
+    "GD_Siren_Items_Anemone.BalanceDefs.Siren_Head_SirenHaz": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_Anemone.BalanceDefs.Siren_Skin_SirenAne": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Anemone.BalanceDefs.Soldier_Head_SoldHaz": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Anemone.BalanceDefs.Soldier_Skin_SoldAne": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Aster.BalanceDefs.Assassin_Head_ZeroAster": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Aster.BalanceDefs.Assassin_Skin_ZeroAster": [
+        3,
+        10
+    ],
+    "GD_Aster_Artifacts.A_Item_Unique.A_MysteryAmulet": [
+        0,
+        9
+    ],
+    "GD_Aster_Artifacts.A_Item_Unique.A_SeraphShadow": [
+        0,
+        9
+    ],
+    "GD_Aster_GrenadeMods.A_Item.GM_ChainLightning": [
+        6,
+        7
+    ],
+    "GD_Aster_GrenadeMods.A_Item.GM_Fireball": [
+        3,
+        7
+    ],
+    "GD_Aster_GrenadeMods.A_Item.GM_FireStorm": [
+        6,
+        7
+    ],
+    "GD_Aster_GrenadeMods.A_Item.GM_LightningBolt": [
+        3,
+        7
+    ],
+    "GD_Aster_GrenadeMods.A_Item.GM_MagicMissile": [
+        3,
+        7
+    ],
+    "GD_Aster_GrenadeMods.A_Item.GM_MagicMissileRare": [
+        4,
+        7
+    ],
+    "GD_Aster_ItemGrades.Shields.Aster_Seraph_Antagonist_Shield_Balance": [
+        8,
+        8
+    ],
+    "GD_Aster_ItemGrades.Shields.Aster_Seraph_Blockade_Shield_Balance": [
+        8,
+        8
+    ],
+    "GD_Mechro_Items_Aster.BalanceDefs.Mechro_Head_MechroAster": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Aster.BalanceDefs.Mechro_Skin_MechroAster": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Aster.BalanceDefs.Mercenary_Head_MercAster": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Aster.BalanceDefs.Mercenary_Skin_MercAster": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Aster.BalanceDefs.Psycho_Head_PsychoAster": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Aster.BalanceDefs.Psycho_Skin_PsychoAster": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_Aster.BalanceDefs.Siren_Head_SirenAster": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_Aster.BalanceDefs.Siren_Skin_SirenAster": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Aster.BalanceDefs.Soldier_Head_SoldAster": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Aster.BalanceDefs.Soldier_Skin_SoldAster": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_CommDay2013.BalanceDefs.Assassin_Head_ZeroCD": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_CommDay2013.BalanceDefs.Assassin_Skin_ZeroCD": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_CommDay2013.BalanceDefs.Mechro_Head_MechroCD": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_CommDay2013.BalanceDefs.Mechro_Skin_MechroCD": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_CommDay2013.BalanceDefs.Mercenary_Head_MercCD": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_CommDay2013.BalanceDefs.Mercenary_Skin_MercCD": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_CommDay2013.BalanceDefs.Psycho_Head_PsychoCD": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_CommDay2013.BalanceDefs.Psycho_Skin_PsychoCD": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_CommDay2013.BalanceDefs.Siren_Head_SirenCD": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_CommDay2013.BalanceDefs.Siren_Skin_SirenCD": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_CommDay2013.BalanceDefs.Soldier_Head_SoldierCD": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_CommDay2013.BalanceDefs.Soldier_Skin_SoldierCD": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_flax.BalanceDefs.Assassin_Head_Pumpkin": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_flax.BalanceDefs.Assassin_Skin_Skele": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_flax.BalanceDefs.Mechro_Head_Pumpkin": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_flax.BalanceDefs.Mechro_Skin_Witch": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_flax.BalanceDefs.Mercenary_Head_Pumpkin": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_flax.BalanceDefs.Mercenary_Skin_Zombie": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_flax.BalanceDefs.Psycho_Head_Pumpkin": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_flax.BalanceDefs.Psycho_Skin_Frank": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_flax.BalanceDefs.Siren_Head_Pumpkin": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_flax.BalanceDefs.Siren_Skin_Mummy": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_flax.BalanceDefs.Soldier_Head_Pumpkin": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_flax.BalanceDefs.Soldier_Skin_Wolf": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Lobelia.BalanceDefs.Assassin_Head_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Lobelia.BalanceDefs.Assassin_Skin_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Gladiolus_Artifacts.A_Item.A_AggressionTenacityAssault_VeryRare": [
+        0,
+        9
+    ],
+    "GD_Gladiolus_Artifacts.A_Item.A_AggressionTenacityLauncher_VeryRare": [
+        0,
+        9
+    ],
+    "GD_Gladiolus_Artifacts.A_Item.A_AggressionTenacityPistol_VeryRare": [
+        0,
+        9
+    ],
+    "GD_Gladiolus_Artifacts.A_Item.A_AggressionTenacityShotgun_VeryRare": [
+        0,
+        9
+    ],
+    "GD_Gladiolus_Artifacts.A_Item.A_AggressionTenacitySMG_VeryRare": [
+        0,
+        9
+    ],
+    "GD_Gladiolus_Artifacts.A_Item.A_AggressionTenacitySniper_VeryRare": [
+        0,
+        9
+    ],
+    "GD_Gladiolus_Artifacts.A_Item.A_ElementalProficiency_VeryRare": [
+        0,
+        9
+    ],
+    "GD_Gladiolus_Artifacts.A_Item.A_ResistanceProtection_VeryRare": [
+        0,
+        9
+    ],
+    "GD_Gladiolus_Artifacts.A_Item.A_VitalityStockpile_VeryRare": [
+        0,
+        9
+    ],
+    "GD_Mechro_Items_Lobelia.BalanceDefs.Mechro_Head_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Lobelia.BalanceDefs.Mechro_Skin_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lobelia.BalanceDefs.Psycho_Head_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Lobelia.BalanceDefs.Psycho_Skin_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_Lobelia.BalanceDefs.Siren_Head_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_Lobelia.BalanceDefs.Siren_Skin_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Lobelia.BalanceDefs.Soldier_Head_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Lobelia.BalanceDefs.Soldier_Skin_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Iris.BalanceDefs.Assassin_Head_Iris": [
+        3,
+        10
+    ],
+    "GD_Iris_SeraphItems.BigBoomBlaster.Iris_Seraph_Shield_Booster_Balance": [
+        8,
+        8
+    ],
+    "GD_Iris_SeraphItems.Crossfire.Iris_Seraph_GrenadeMod_Crossfire_Balance": [
+        8,
+        7
+    ],
+    "GD_Iris_SeraphItems.Hoplite.Iris_Seraph_Shield_Juggernaut_Balance": [
+        8,
+        8
+    ],
+    "GD_Iris_SeraphItems.MeteorShower.Iris_Seraph_GrenadeMod_MeteorShower_Balance": [
+        8,
+        7
+    ],
+    "GD_Iris_SeraphItems.Might.Iris_Seraph_Artifact_Might_Balance": [
+        0,
+        9
+    ],
+    "GD_Iris_SeraphItems.ONegative.Iris_Seraph_GrenadeMod_ONegative_Balance": [
+        8,
+        7
+    ],
+    "GD_Iris_SeraphItems.Pun-chee.Iris_Seraph_Shield_Pun-chee_Balance": [
+        8,
+        8
+    ],
+    "GD_Iris_SeraphItems.Sponge.Iris_Seraph_Shield_Sponge_Balance": [
+        8,
+        8
+    ],
+    "GD_Mechro_Items_Iris.BalanceDefs.Mechro_Head_Iris": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Iris.BalanceDefs.Mercenary_Head_Iris": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_Iris.BalanceDefs.Siren_Head_Iris": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Iris.BalanceDefs.Soldier_Head_Iris": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Lobelia.BalanceDefs.Mercenary_Head_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Lobelia.BalanceDefs.Mercenary_Skin_Lobelia": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_LootChest2.BalanceDefs.Assassin_Head_LootChest2": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_LootChest2.BalanceDefs.Mechro_Head_LootChest2": [
+        3,
+        10
+    ],
+    "GD_Merc_Items_LootChest2.BalanceDefs.Merc_Head_LootChest2": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_LootChest2.BalanceDefs.Psycho_Head_LootChest2": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_LootChest2.BalanceDefs.Siren_Head_LootChest2": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_LootChest2.BalanceDefs.Soldier_Head_LootChest2": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_nasturtium.BalanceDefs.Assassin_Head_ZeroEaster": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_nasturtium.BalanceDefs.Assassin_Head_ZeroVday": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_nasturtium.BalanceDefs.Assassin_Skin_ZeroEaster": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_nasturtium.BalanceDefs.Assassin_Skin_ZeroVday": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_nasturtium.BalanceDefs.Mechro_Head_MechroEaster": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_nasturtium.BalanceDefs.Mechro_Head_MechroVday": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_nasturtium.BalanceDefs.Mechro_Skin_MechroEaster": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_nasturtium.BalanceDefs.Mechro_Skin_MechroVday": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_nasturtium.BalanceDefs.Mercenary_Head_MercE": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_nasturtium.BalanceDefs.Mercenary_Head_MercVday": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_nasturtium.BalanceDefs.Mercenary_Skin_MercE": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_nasturtium.BalanceDefs.Mercenary_Skin_MercVday": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_nasturtium.BalanceDefs.Psycho_Head_PsychoEaster": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_nasturtium.BalanceDefs.Psycho_Head_PsychoVday": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_nasturtium.BalanceDefs.Psycho_Skin_PsychoEaster": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_nasturtium.BalanceDefs.Psycho_Skin_PsychoVday": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_nasturtium.BalanceDefs.Siren_Head_SirenEaster": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_nasturtium.BalanceDefs.Siren_Head_SirenVday": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_nasturtium.BalanceDefs.Siren_Skin_SirenEaster": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_nasturtium.BalanceDefs.Siren_Skin_SirenVday": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_nasturtium.BalanceDefs.Soldier_Head_SoldierE": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_nasturtium.BalanceDefs.Soldier_Head_SoldierVday": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_nasturtium.BalanceDefs.Soldier_Skin_SoldierE": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_nasturtium.BalanceDefs.Soldier_Skin_SoldierVday": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Orchid.BalanceDefs.Assassin_Head_ZOrchid": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Blood": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Blue": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_BlueBlk": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_BlueDk": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_BlueLt": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_CamoBlue": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_CamoGrey": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_CamoGrn": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_CamoTan": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_DirtGrey": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_DirtGrng": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_DirtSpl": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_DirtStn": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_F_Burst": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_F_Char": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_F_Infern": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_F_Propan": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Graffiti": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Green": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_GreenBlk": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_GreenDk": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_GreenLt": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_GreyBlk": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_GreyDark": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_GreyLt": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_GreyWht": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_HexBlue": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_HexGrn": [
+        4,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_HexOrng": [
+        4,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_HexPrpl": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_M_Alien": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_M_Blue": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_M_Grey": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_M_White": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Orange": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_OrangeDk": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_OrangeLt": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Paint": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Pink": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_PinkDark": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_PinkLt": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Purple": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_PurpleDk": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_PurpleLt": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Red": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_RedBlk": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_RedDark": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_RedLt": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_RingBlue": [
+        4,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_RingOrng": [
+        4,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_RingPrpl": [
+        4,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_RingRed": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Rust": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_S_BluBlk": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_S_GrnBlk": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_S_RedBlk": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_S_YelBlk": [
+        4,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Terq": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_TerqDark": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_TerqLt": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_WoodBrl": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_WoodEpic": [
+        3,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_WoodOak": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_WoodOld": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_Yellow": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_YellowBk": [
+        2,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_YellowDk": [
+        1,
+        10
+    ],
+    "GD_Hovercraft_Items_Orchid.BalanceDefs.Hovercraft_Skin_YellowLt": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Orchid.BalanceDefs.Mechro_Head_Mechro042": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Orchid.BalanceDefs.Mercenary_Head_MOrchid": [
+        3,
+        10
+    ],
+    "GD_Orchid_Artifacts.A_Item_Unique.A_Blade": [
+        0,
+        9
+    ],
+    "GD_Orchid_Artifacts.A_Item_Unique.A_SeraphBloodRelic": [
+        0,
+        9
+    ],
+    "GD_Orchid_GrenadeMods.A_Item_Custom.GM_Blade": [
+        3,
+        7
+    ],
+    "GD_Orchid_RaidWeapons.Shield.Anshin.Orchid_Seraph_Anshin_Shield_Balance": [
+        8,
+        8
+    ],
+    "GD_Orchid_Shields.A_Item_Custom.S_BladeShield": [
+        3,
+        8
+    ],
+    "GD_Siren_Items_Orchid.BalanceDefs.Siren_Head_SiOrchid": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Orchid.BalanceDefs.Soldier_Head_SoOrchid": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Peony.BalanceDefs.Assassin_Head_ZeroPeony": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Peony.BalanceDefs.Assassin_Skin_ZeroPeony": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Peony.BalanceDefs.Mechro_Head_MechroPeony": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Peony.BalanceDefs.Mechro_Skin_MechroPeony": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Peony.BalanceDefs.Mercenary_Head_MercPeony": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Peony.BalanceDefs.Mercenary_Skin_MercPeony": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Peony.BalanceDefs.Psycho_Head_PsychoPeony": [
+        3,
+        10
+    ],
+    "GD_Psycho_Items_Peony.BalanceDefs.Psycho_Skin_PsychoPeony": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_Peony.BalanceDefs.Siren_Head_SirenPeony": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_Peony.BalanceDefs.Siren_Skin_SirenPeony": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Peony.BalanceDefs.Soldier_Head_SoldrPeony": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Peony.BalanceDefs.Soldier_Skin_SoldrPeony": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_PN2.BalanceDefs.Assassin_Head_ZeroPN2": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_PN2.BalanceDefs.Assassin_Skin_PN2": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_PN2.BalanceDefs.Mechro_Head_PN2": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_PN2.BalanceDefs.Mercenary_Head_PN2": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_PN2.BalanceDefs.Siren_Head_PN2": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_PN2.BalanceDefs.Soldier_Head_PN2": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Sage.BalanceDefs.Assassin_Head_ZeroSage": [
+        3,
+        10
+    ],
+    "GD_Assassin_Items_Sage.BalanceDefs.Assassin_Skin_Zebra": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_Blood": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_Blue": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_BlueBlk": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_BlueDk": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_BlueLt": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_CamoBlue": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_CamoGrn": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_CamoTan": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_DirtGrng": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_DirtSpl": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_DirtStn": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_F_Burst": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_F_Char": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_F_Infern": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_F_Propan": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_Graffiti": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_GreenBlk": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_GreenDk": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_GreyLt": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_GreyWht": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_HexBlue": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_HexGrn": [
+        4,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_HexOrng": [
+        4,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_HexPrpl": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_M_Alien": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_M_Grey": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_M_White": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_OrangeDk": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_OrangeLt": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_Paint": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_Pink": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_PinkDark": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_Purple": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_PurpleDk": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_PurpleLt": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_Red": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_RedBlk": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_RedDark": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_RedLt": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_RingBlue": [
+        4,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_RingOrng": [
+        4,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_RingPrpl": [
+        4,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_RingRed": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_Rust": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_S_BluBlk": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_S_GrnBlk": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_S_RedBlk": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_S_YelBlk": [
+        4,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_Terq": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_WoodBrl": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_WoodEpic": [
+        3,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_WoodOak": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_WoodOld": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_YellowBk": [
+        2,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_YellowDk": [
+        1,
+        10
+    ],
+    "GD_Fanboat_Items_Sage.BalanceDefs.Fanboat_Skin_YellowLt": [
+        1,
+        10
+    ],
+    "GD_Mechro_Items_Sage.BalanceDefs.Mechro_Head_MechroSage": [
+        3,
+        10
+    ],
+    "GD_Mechro_Items_Sage.BalanceDefs.Mechro_Skin_Leopard": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Sage.BalanceDefs.Mercenary_Head_MercSage": [
+        3,
+        10
+    ],
+    "GD_Mercenary_Items_Sage.BalanceDefs.Mercenary_Skin_Rhino": [
+        3,
+        10
+    ],
+    "GD_Sage_Artifacts.A_Item.A_SeraphBreath": [
+        0,
+        9
+    ],
+    "GD_Sage_Shields.A_Item_Custom.S_BucklerShield": [
+        3,
+        8
+    ],
+    "GD_Siren_Items_Sage.BalanceDefs.Siren_Head_SirenSage": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_Sage.BalanceDefs.Siren_Skin_Tiger": [
+        3,
+        10
+    ],
+    "GD_Siren_Items_Sage.BalanceDefs.Siren_Skin_WTiger": [
+        4,
+        10
+    ],
+    "GD_Soldier_Items_Sage.BalanceDefs.Soldier_Head_SoldierSage": [
+        3,
+        10
+    ],
+    "GD_Soldier_Items_Sage.BalanceDefs.Soldier_Skin_Snake": [
+        3,
+        10
+    ],
+    "GD_ItemGrades.Shields_Enemy.ItemGrade_Gear_Shield_Enemy_Standard": [
+        0,
+        8
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Dahl_Starter": [
+        1,
+        0
+    ],
+    "GD_Weap_SMG.A_Weapons_Unique.SMG_Dahl_3_Lascaux": [
+        3,
+        2
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Dahl_3_GwensHead": [
+        3,
+        0
+    ],
+    "GD_Weap_SMG.A_Weapons_Unique.SMG_Maliwan_3_BadTouch": [
+        4,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons_Unique.SMG_Maliwan_3_GoodTouch": [
+        4,
+        2
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Jakobs": [
+        1,
+        1
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Jakobs": [
+        1,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Dahl": [
+        1,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Vladof": [
+        1,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Jakobs_3_Judge": [
+        3,
+        0
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Unique.Sniper_Hyperion_3_FremingtonsEdge": [
+        3,
+        3
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Unique.SG_Bandit_3_Dog": [
+        3,
+        1
+    ],
+    "GD_Weap_SMG.A_Weapons_Unique.SMG_Hyperion_3_Commerce": [
+        3,
+        2
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Legendary.SG_Bandit_5_SledgesShotgun": [
+        6,
+        1
+    ],
+    "GD_Weap_Launchers.A_Weapons_Legendary.RL_Torgue_5_Nukem": [
+        6,
+        5
+    ],
+    "GD_Weap_SMG.A_Weapons_Unique.SMG_Bandit_3_BoneShredder": [
+        4,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons_Legendary.SMG_Hyperion_5_Bitch": [
+        6,
+        2
+    ],
+    "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Maliwan_5_ThunderballFists": [
+        6,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Bandit_3_Tenderbox": [
+        3,
+        0
+    ],
+    "GD_Weap_Launchers.A_Weapons_Legendary.RL_Tediore_5_Bunny": [
+        6,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons_Legendary.RL_Maliwan_5_Pyrophobia": [
+        6,
+        5
+    ],
+    "GD_Weap_SMG.A_Weapons_Legendary.SMG_Dahl_5_Emperor": [
+        6,
+        2
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Legendary.Sniper_Vladof_5_Lyudmila": [
+        6,
+        3
+    ],
+    "GD_Weap_Launchers.A_Weapons_Legendary.RL_Bandit_5_BadaBoom": [
+        6,
+        5
+    ],
+    "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Dahl_5_Hornet": [
+        6,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Bandit_5_Gub": [
+        6,
+        0
+    ],
+    "GD_Weap_SMG.A_Weapons_Legendary.SMG_Tediore_5_BabyMaker": [
+        6,
+        2
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Legendary.AR_Bandit_5_Madhouse": [
+        6,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Legendary.AR_Jakobs_5_HammerBuster": [
+        6,
+        4
+    ],
+    "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Jakobs_5_Maggie": [
+        6,
+        0
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Legendary.AR_Dahl_5_Veruc": [
+        6,
+        4
+    ],
+    "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Vladof_5_Infinity": [
+        6,
+        0
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Legendary.SG_Jakobs_5_Striker": [
+        6,
+        1
+    ],
+    "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Tediore_5_Gunerang": [
+        6,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Torgue_5_Calla": [
+        6,
+        0
+    ],
+    "GD_Weap_SMG.A_Weapons_Legendary.SMG_Maliwan_5_HellFire": [
+        6,
+        2
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Jakobs_3_Law": [
+        3,
+        0
+    ],
+    "GD_Weap_Launchers.A_Weapons_Legendary.RL_Vladof_5_Mongol": [
+        6,
+        5
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Legendary.Sniper_Jakobs_5_Skullmasher": [
+        6,
+        3
+    ],
+    "GD_Weap_Launchers.A_Weapons_Unique.RL_Maliwan_3_TheHive": [
+        3,
+        5
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Legendary.Sniper_Hyperion_5_Invader": [
+        6,
+        3
+    ],
+    "GD_Weap_SMG.A_Weapons_Legendary.SMG_Bandit_5_Slagga": [
+        6,
+        2
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Unique.SG_Bandit_3_Teeth": [
+        3,
+        1
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Legendary.Sniper_Dahl_5_Pitchfork": [
+        6,
+        3
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Legendary.SG_Tediore_5_Deliverance": [
+        6,
+        1
+    ],
+    "GD_Weap_Launchers.A_Weapons_Unique.RL_Maliwan_Alien_Norfleet": [
+        6,
+        5
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Legendary.AR_Torgue_5_KerBlaster": [
+        6,
+        4
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Legendary.Sniper_Maliwan_5_Volcano": [
+        6,
+        3
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Legendary.SG_Torgue_5_Flakker": [
+        6,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Legendary.SG_Hyperion_5_ConferenceCall": [
+        6,
+        1
+    ],
+    "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Hyperion_5_LogansGun": [
+        6,
+        0
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Bandit": [
+        1,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Dahl": [
+        1,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Jakobs": [
+        1,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Torgue": [
+        1,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Vladof": [
+        1,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Bandit_2_Uncommon": [
+        2,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Dahl_2_Uncommon": [
+        2,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Jakobs_2_Uncommon": [
+        2,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Torgue_2_Uncommon": [
+        2,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Vladof_2_Uncommon": [
+        2,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Bandit_3_Rare": [
+        3,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Dahl_3_Rare": [
+        3,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Jakobs_3_Rare": [
+        3,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Torgue_3_Rare": [
+        3,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Vladof_3_Rare": [
+        3,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Bandit_4_VeryRare": [
+        4,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Dahl_4_VeryRare": [
+        4,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Jakobs_4_VeryRare": [
+        4,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Torgue_4_VeryRare": [
+        4,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Vladof_4_VeryRare": [
+        4,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Bandit_5_Alien": [
+        5,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Dahl_5_Alien": [
+        5,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Vladof_5_Alien": [
+        5,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Legendary.AR_Vladof_5_Sherdifier": [
+        6,
+        4
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Bandit": [
+        1,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Tediore": [
+        1,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Vladof": [
+        1,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Maliwan": [
+        1,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Torgue": [
+        1,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Bandit_2_Uncommon": [
+        2,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Tediore_2_Uncommon": [
+        2,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Vladof_2_Uncommon": [
+        2,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Maliwan_2_Uncommon": [
+        2,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Torgue_2_Uncommon": [
+        2,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Bandit_3_Rare": [
+        3,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Tediore_3_Rare": [
+        3,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Vladof_3_Rare": [
+        3,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Maliwan_3_Rare": [
+        3,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Torgue_3_Rare": [
+        3,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Bandit_4_VeryRare": [
+        4,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Tediore_4_VeryRare": [
+        4,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Vladof_4_VeryRare": [
+        4,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Maliwan_4_VeryRare": [
+        4,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Torgue_4_VeryRare": [
+        4,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Bandit_5_Alien": [
+        5,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Tediore_5_Alien": [
+        5,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Vladof_5_Alien": [
+        5,
+        5
+    ],
+    "GD_Weap_Launchers.A_Weapons.RL_Maliwan_5_Alien": [
+        5,
+        5
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Unique.SG_Tediore_3_Blockhead": [
+        3,
+        1
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Unique.Sniper_Hyperion_3_Longbow": [
+        6,
+        3
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Bandit": [
+        1,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Tediore": [
+        1,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Torgue": [
+        1,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Maliwan": [
+        1,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Hyperion": [
+        1,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Bandit_2_Uncommon": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Tediore_2_Uncommon": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Dahl_2_Uncommon": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Vladof_2_Uncommon": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Torgue_2_Uncommon": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Maliwan_2_Uncommon": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Jakobs_2_Uncommon": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Hyperion_2_Uncommon": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Bandit_3_Rare": [
+        3,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Tediore_3_Rare": [
+        3,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Dahl_3_Rare": [
+        3,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Vladof_3_Rare": [
+        3,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Torgue_3_Rare": [
+        3,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Maliwan_3_Rare": [
+        3,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Jakobs_3_Rare": [
+        3,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Hyperion_3_Rare": [
+        3,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Bandit_4_VeryRare": [
+        4,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Tediore_4_VeryRare": [
+        4,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Dahl_4_VeryRare": [
+        4,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Vladof_4_VeryRare": [
+        4,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Torgue_4_VeryRare": [
+        4,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Maliwan_4_VeryRare": [
+        4,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Jakobs_4_VeryRare": [
+        4,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Hyperion_4_VeryRare": [
+        4,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Bandit_5_Alien": [
+        5,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Dahl_5_Alien": [
+        5,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Tediore_5_Alien": [
+        5,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Vladof_5_Alien": [
+        5,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Maliwan_5_Alien": [
+        5,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons.Pistol_Hyperion_5_Alien": [
+        5,
+        0
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Bandit": [
+        1,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Tediore": [
+        1,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Torgue": [
+        1,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Hyperion": [
+        1,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Bandit_2_Uncommon": [
+        2,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Tediore_2_Uncommon": [
+        2,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Torgue_2_Uncommon": [
+        2,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Jakobs_2_Uncommon": [
+        2,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Hyperion_2_Uncommon": [
+        2,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Bandit_3_Rare": [
+        3,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Tediore_3_Rare": [
+        3,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Torgue_3_Rare": [
+        3,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Jakobs_3_Rare": [
+        3,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Hyperion_3_Rare": [
+        3,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Bandit_4_VeryRare": [
+        4,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Tediore_4_VeryRare": [
+        4,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Torgue_4_VeryRare": [
+        4,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Jakobs_4_VeryRare": [
+        4,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Hyperion_4_VeryRare": [
+        4,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Bandit_5_Alien": [
+        5,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Tediore_5_Alien": [
+        5,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons.SG_Hyperion_5_Alien": [
+        5,
+        1
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Bandit": [
+        1,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Tediore": [
+        1,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Dahl": [
+        1,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Maliwan": [
+        1,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Hyperion": [
+        1,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Bandit_2_Uncommon": [
+        2,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Tediore_2_Uncommon": [
+        2,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Dahl_2_Uncommon": [
+        2,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Maliwan_2_Uncommon": [
+        2,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Hyperion_2_Uncommon": [
+        2,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Bandit_3_Rare": [
+        3,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Tediore_3_Rare": [
+        3,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Dahl_3_Rare": [
+        3,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Maliwan_3_Rare": [
+        3,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Hyperion_3_Rare": [
+        3,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Bandit_4_VeryRare": [
+        4,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Tediore_4_VeryRare": [
+        4,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Dahl_4_VeryRare": [
+        4,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Maliwan_4_VeryRare": [
+        4,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Hyperion_4_VeryRare": [
+        4,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Bandit_5_Alien": [
+        5,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Tediore_5_Alien": [
+        5,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Dahl_5_Alien": [
+        5,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Maliwan_5_Alien": [
+        5,
+        2
+    ],
+    "GD_Weap_SMG.A_Weapons.SMG_Hyperion_5_Alien": [
+        5,
+        2
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Dahl": [
+        1,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Vladof": [
+        1,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Maliwan": [
+        1,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Jakobs": [
+        1,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Hyperion": [
+        1,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Dahl_2_Uncommon": [
+        2,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Vladof_2_Uncommon": [
+        2,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Maliwan_2_Uncommon": [
+        2,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Jakobs_2_Uncommon": [
+        2,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Hyperion_2_Uncommon": [
+        2,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Dahl_3_Rare": [
+        3,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Vladof_3_Rare": [
+        3,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Maliwan_3_Rare": [
+        3,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Jakobs_3_Rare": [
+        3,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Hyperion_3_Rare": [
+        3,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Dahl_4_VeryRare": [
+        4,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Vladof_4_VeryRare": [
+        4,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Maliwan_4_VeryRare": [
+        4,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Jakobs_4_VeryRare": [
+        4,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Hyperion_4_VeryRare": [
+        4,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Dahl_5_Alien": [
+        5,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Vladof_5_Alien": [
+        5,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Maliwan_5_Alien": [
+        5,
+        3
+    ],
+    "GD_Weap_SniperRifles.A_Weapons.Sniper_Hyperion_5_Alien": [
+        5,
+        3
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Unique.AR_Dahl_1_GBX": [
+        1,
+        4
+    ],
+    "GD_Weap_SMG.A_Weapons_Unique.SMG_Gearbox_1": [
+        1,
+        2
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Unique.Sniper_Gearbox_1": [
+        1,
+        3
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Unique.AR_Vladof_3_Hail": [
+        3,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Unique.AR_Dahl_3_Scorpio": [
+        3,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Elemental.AR_Bandit_2_Fire": [
+        2,
+        4
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Dahl_3_Teapot": [
+        3,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Hyperion_3_Fibber": [
+        3,
+        0
+    ],
+    "GD_Weap_Launchers.A_Weapons_Unique.RL_Torgue_3_Creamer": [
+        3,
+        5
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Unique.Sniper_Jakobs_3_Buffalo": [
+        3,
+        3
+    ],
+    "GD_Weap_SMG.A_Weapons_Unique.SMG_Maliwan_3_Chulainn": [
+        3,
+        2
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Unique.SG_Torgue_3_Landscaper": [
+        3,
+        1
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Unique.Sniper_Jakobs_3_Tresspasser": [
+        3,
+        3
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Unique.SG_Jakobs_3_Triquetra": [
+        3,
+        1
+    ],
+    "GD_Weap_Launchers.A_Weapons_Unique.RL_Bandit_3_Roaster": [
+        3,
+        5
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Unique.Sniper_Dahl_3_Sloth": [
+        3,
+        3
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Maliwan_3_Rubi": [
+        3,
+        0
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Unique.SG_Hyperion_3_HeartBreaker": [
+        3,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Unique.SG_Tediore_3_Octo": [
+        3,
+        1
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Unique.SG_Bandit_3_RokSalt": [
+        3,
+        1
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Vladof_3_Veritas": [
+        3,
+        0
+    ],
+    "GD_Weap_SMG.A_Weapons_Unique.SMG_Hyperion_3_Bane": [
+        3,
+        2
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Unique.AR_Torgue_3_EvilSmasher": [
+        3,
+        4
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons_Unique.AR_Jakobs_3_Stomper": [
+        3,
+        4
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Unique.Sniper_Hyperion_3_Morningstar": [
+        3,
+        3
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Dahl_3_Dahlminator": [
+        5,
+        0
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Unique.SG_Hyperion_3_Shotgun1340": [
+        3,
+        1
+    ],
+    "GD_Weap_SniperRifles.A_Weapons_Unique.Sniper_Maliwan_3_ChereAmie": [
+        3,
+        3
+    ],
+    "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Hyperion_3_LadyFist": [
+        3,
+        0
+    ],
+    "GD_Weap_Shotgun.A_Weapons_Unique.SG_Jakobs_3_TidalWave": [
+        3,
+        1
+    ],
+    "GD_Weap_Pistol.A_Weapons_Elemental.Pistol_Maliwan_2_Corrosive": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons_Elemental.Pistol_Maliwan_2_Fire": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons_Elemental.Pistol_Maliwan_2_Shock": [
+        2,
+        0
+    ],
+    "GD_Weap_Pistol.A_Weapons_Elemental.Pistol_Maliwan_2_Slag": [
+        2,
+        0
+    ],
+    "GD_Weap_AssaultRifle.A_Weapons.AR_Bandit_3_Rare_Alien": [
+        5,
+        4
+    ],
+    "GD_Allium_TG_Plot_M01Data.Weapons.Weapon_JabberSlagWeapon": [
+        2,
+        0
+    ],
+    "GD_Anemone_Weapons.A_Weapons_Legendary.Pistol_Dahl_5_Hector_Hornet": [
+        6,
+        0
+    ],
+    "GD_Anemone_Weapons.AssaultRifle.Brothers.AR_Jakobs_5_Brothers": [
+        6,
+        4
+    ],
+    "GD_Anemone_Weapons.A_Weapons_Legendary.Pistol_Vladof_5_Infinity_DD": [
+        6,
+        0
+    ],
+    "GD_Anemone_Weapons.Shotguns.SG_Torgue_3_SwordSplosion_Unico": [
+        9,
+        1
+    ],
+    "GD_Anemone_Weapons.Rocket_Launcher.RL_Maliwan_5_Pyrophobia": [
+        6,
+        5
+    ],
+    "GD_Anemone_Weapons.A_Weapons_Legendary.SMG_Maliwan_5_HellFire": [
+        9,
+        2
+    ],
+    "GD_Anemone_Weapons.A_Weapons_Unique.RL_Maliwan_Alien_Norfleet_Fire_100": [
+        6,
+        5
+    ],
+    "GD_Anemone_Lt_Hoffman.A_Weapons.Sniper_Vladof_4_VeryRare_Hoffman": [
+        4,
+        3
+    ],
+    "GD_Anemone_Weapons.sniper.Sniper_Jakobs_6_Chaude_Mama": [
+        9,
+        3
+    ],
+    "GD_Anemone_Weapons.SMG.SMG_Tediore_6_Infection_Cleaner": [
+        9,
+        2
+    ],
+    "GD_Anemone_Weapons.A_Weapons_Unique.Sniper_Jakobs_3_Morde_Lt": [
+        6,
+        3
+    ],
+    "GD_Anemone_Weapons.Shotgun.Overcompensator.SG_Hyperion_6_Overcompensator": [
+        6,
+        1
+    ],
+    "GD_Anemone_Weapons.AssaultRifle.PeakOpener.AR_Torgue_5_PeakOpener": [
+        9,
+        4
+    ],
+    "GD_Anemone_Weapons.Testing_Resist_100.100_Fire": [
+        6,
+        0
+    ],
+    "GD_Anemone_Weapons.AssaultRifle.AR_Dahl_6_Toothpick": [
+        9,
+        4
+    ],
+    "GD_Anemone_Weapons.Rocket_Launcher.WorldBurn.RL_Torgue_5_WorldBurn": [
+        9,
+        5
+    ],
+    "GD_Anemone_Weap_SniperRifles.A_Weapons.Sniper_Jakobs": [
+        1,
+        3
+    ],
+    "GD_Anemone_Weap_SniperRifles.A_Weapons.Sniper_Jakobs_2_Uncommon": [
+        2,
+        3
+    ],
+    "GD_Anemone_Weap_SniperRifles.A_Weapons.Sniper_Jakobs_3_Rare": [
+        3,
+        3
+    ],
+    "GD_Anemone_Weap_SniperRifles.A_Weapons.Sniper_Jakobs_4_VeryRare": [
+        4,
+        3
+    ],
+    "GD_Anemone_Weapons.A_Weapons.Pistol_Vladof_4_VeryRare": [
+        6,
+        0
+    ],
+    "GD_Anemone_Weapons.A_Weapons.SG_Torgue_7_Effervecemt": [
+        9,
+        1
+    ],
+    "GD_Anemone_Weapons.AssaultRifle.PeakOpener.AR_PeakOpener": [
+        0,
+        4
+    ],
+    "GD_Aster_Weapons.AssaultRifles.AR_Bandit_3_Ogre": [
+        6,
+        4
+    ],
+    "GD_Aster_Weapons.Pistols.Pistol_Maliwan_3_GrogNozzle": [
+        3,
+        0
+    ],
+    "GD_Aster_Weapons.SMGs.SMG_Maliwan_3_Crit": [
+        3,
+        2
+    ],
+    "GD_Aster_RaidWeapons.Shotguns.Aster_Seraph_Omen_Balance": [
+        8,
+        1
+    ],
+    "GD_Aster_RaidWeapons.Pistols.Aster_Seraph_Stinger_Balance": [
+        8,
+        0
+    ],
+    "GD_Aster_RaidWeapons.AssaultRifles.Aster_Seraph_Seeker_Balance": [
+        8,
+        4
+    ],
+    "GD_Aster_RaidWeapons.SMGs.Aster_Seraph_Florentine_Balance": [
+        8,
+        2
+    ],
+    "GD_Aster_Weapons.Pistols.Pistol_Torgue_4_Rock": [
+        4,
+        0
+    ],
+    "GD_Aster_Weapons.Shotguns.SG_Torgue_4_Rock": [
+        4,
+        1
+    ],
+    "GD_Aster_Weapons.AssaultRifles.AR_Torgue_4_Rock": [
+        4,
+        4
+    ],
+    "GD_Aster_Weapons.AssaultRifles.AR_Bandit_4_Quartz": [
+        4,
+        4
+    ],
+    "GD_Aster_Weapons.AssaultRifles.AR_Dahl_4_Emerald": [
+        4,
+        4
+    ],
+    "GD_Aster_Weapons.AssaultRifles.AR_Vladof_4_Garnet": [
+        4,
+        4
+    ],
+    "GD_Aster_Weapons.AssaultRifles.AR_Jakobs_4_Citrine": [
+        4,
+        4
+    ],
+    "GD_Aster_Weapons.Pistols.Pistol_Bandit_4_Quartz": [
+        4,
+        0
+    ],
+    "GD_Aster_Weapons.Pistols.Pistol_Tediore_4_CubicZerconia": [
+        4,
+        0
+    ],
+    "GD_Aster_Weapons.Pistols.Pistol_Dahl_4_Emerald": [
+        4,
+        0
+    ],
+    "GD_Aster_Weapons.Pistols.Pistol_Vladof_4_Garnet": [
+        4,
+        0
+    ],
+    "GD_Aster_Weapons.Pistols.Pistol_Maliwan_4_Aquamarine": [
+        4,
+        0
+    ],
+    "GD_Aster_Weapons.Pistols.Pistol_Jakobs_4_Citrine": [
+        4,
+        0
+    ],
+    "GD_Aster_Weapons.Pistols.Pistol_Hyperion_4_Diamond": [
+        4,
+        0
+    ],
+    "GD_Aster_Weapons.Shotguns.SG_Bandit_4_Quartz": [
+        4,
+        1
+    ],
+    "GD_Aster_Weapons.Shotguns.SG_Tediore_4_CubicZerconia": [
+        4,
+        1
+    ],
+    "GD_Aster_Weapons.Shotguns.SG_Jakobs_4_Citrine": [
+        4,
+        1
+    ],
+    "GD_Aster_Weapons.Shotguns.SG_Hyperion_4_Diamond": [
+        4,
+        1
+    ],
+    "GD_Aster_Weapons.SMGs.SMG_Bandit_4_Quartz": [
+        4,
+        2
+    ],
+    "GD_Aster_Weapons.SMGs.SMG_Tediore_4_CubicZerconia": [
+        4,
+        2
+    ],
+    "GD_Aster_Weapons.SMGs.SMG_Dahl_4_Emerald": [
+        4,
+        2
+    ],
+    "GD_Aster_Weapons.SMGs.SMG_Maliwan_4_Aquamarine": [
+        4,
+        2
+    ],
+    "GD_Aster_Weapons.SMGs.SMG_Hyperion_4_Diamond": [
+        4,
+        2
+    ],
+    "GD_Aster_Weapons.Snipers.SR_Dahl_4_Emerald": [
+        4,
+        3
+    ],
+    "GD_Aster_Weapons.Snipers.SR_Vladof_4_Garnet": [
+        4,
+        3
+    ],
+    "GD_Aster_Weapons.Snipers.SR_Maliwan_4_Aquamarine": [
+        4,
+        3
+    ],
+    "GD_Aster_Weapons.Snipers.SR_Jakobs_4_Citrine": [
+        4,
+        3
+    ],
+    "GD_Aster_Weapons.Snipers.SR_Hyperion_4_Diamond": [
+        4,
+        3
+    ],
+    "GD_Aster_Weapons.Shotguns.SG_Torgue_3_SwordSplosion": [
+        5,
+        1
+    ],
+    "GD_Aster_Weapons.SMGs.SMG_Bandit_3_Orc": [
+        4,
+        2
+    ],
+    "GD_Gladiolus_Weapons.Pistol.Pistol_Jakobs_6_Unforgiven": [
+        7,
+        0
+    ],
+    "GD_Gladiolus_Weapons.Pistol.Pistol_Vladof_6_Stalker": [
+        7,
+        0
+    ],
+    "GD_Gladiolus_Weapons.AssaultRifle.AR_Bandit_6_Sawbar": [
+        7,
+        4
+    ],
+    "GD_Gladiolus_Weapons.AssaultRifle.AR_Dahl_6_Bearcat": [
+        7,
+        4
+    ],
+    "GD_Gladiolus_Weapons.SMG.SMG_Tediore_6_Avenger": [
+        7,
+        2
+    ],
+    "GD_Gladiolus_Weapons.Shotgun.SG_Hyperion_6_Butcher": [
+        7,
+        1
+    ],
+    "GD_Gladiolus_Weapons.sniper.Sniper_Maliwan_6_Storm": [
+        7,
+        3
+    ],
+    "GD_Gladiolus_Weapons.Launchers.RL_Torgue_6_Tunguska": [
+        7,
+        5
+    ],
+    "GD_Iris_Weapons.Shotguns.SG_Hyperion_3_SlowHand": [
+        5,
+        1
+    ],
+    "GD_Iris_Weapons.Pistols.Pistol_Torgue_3_PocketRocket": [
+        3,
+        0
+    ],
+    "GD_Iris_Weapons.SniperRifles.Sniper_Jakobs_3_Cobra": [
+        3,
+        3
+    ],
+    "GD_Iris_Weapons.AssaultRifles.AR_Torgue_3_BoomPuppy": [
+        3,
+        4
+    ],
+    "GD_Iris_Weapons.AssaultRifles.AR_Vladof_3_Kitten": [
+        3,
+        4
+    ],
+    "GD_Lobelia_Weapons.Shotguns.SG_Torgue_6_Carnage": [
+        7,
+        1
+    ],
+    "GD_Lobelia_Weapons.Pistol.Pistol_Maliwan_6_Wanderlust": [
+        7,
+        0
+    ],
+    "GD_Lobelia_Weapons.sniper.Sniper_Jakobs_6_Godfinger": [
+        7,
+        3
+    ],
+    "GD_Lobelia_Weapons.AssaultRifles.AR_Jakobs_6_Bekah": [
+        7,
+        4
+    ],
+    "GD_Orchid_BossWeapons.Pistol.Pistol_Jakobs_ScarletsGreed": [
+        3,
+        0
+    ],
+    "GD_Orchid_BossWeapons.Launcher.RL_Torgue_3_12Pounder": [
+        3,
+        5
+    ],
+    "GD_Orchid_BossWeapons.Pistol.Pistol_Maliwan_3_LittleEvie": [
+        3,
+        0
+    ],
+    "GD_Orchid_BossWeapons.AssaultRifle.AR_Jakobs_3_Stinkpot": [
+        3,
+        4
+    ],
+    "GD_Orchid_RaidWeapons.Pistol.Devastator.Orchid_Seraph_Devastator_Balance": [
+        8,
+        0
+    ],
+    "GD_Orchid_RaidWeapons.SMG.Tattler.Orchid_Seraph_Tattler_Balance": [
+        8,
+        2
+    ],
+    "GD_Orchid_RaidWeapons.Shotgun.Spitter.Orchid_Seraph_Spitter_Balance": [
+        8,
+        1
+    ],
+    "GD_Orchid_RaidWeapons.SMG.Actualizer.Orchid_Seraph_Actualizer_Balance": [
+        8,
+        2
+    ],
+    "GD_Orchid_RaidWeapons.AssaultRifle.Seraphim.Orchid_Seraph_Seraphim_Balance": [
+        8,
+        4
+    ],
+    "GD_Orchid_RaidWeapons.sniper.Patriot.Orchid_Seraph_Patriot_Balance": [
+        8,
+        3
+    ],
+    "GD_Orchid_RaidWeapons.RPG.Ahab.Orchid_Seraph_Ahab_Balance": [
+        8,
+        5
+    ],
+    "GD_Orchid_BossWeapons.RPG.Ahab.Orchid_Boss_Ahab_Balance_NODROP": [
+        8,
+        5
+    ],
+    "GD_Orchid_BossWeapons.AssaultRifle.AR_Vladof_3_Rapier": [
+        3,
+        4
+    ],
+    "GD_Orchid_BossWeapons.Shotgun.SG_Bandit_3_JollyRoger": [
+        3,
+        1
+    ],
+    "GD_Orchid_BossWeapons.Shotgun.SG_Jakobs_3_OrphanMaker": [
+        3,
+        1
+    ],
+    "GD_Orchid_BossWeapons.SMG.SMG_Dahl_3_SandHawk": [
+        3,
+        2
+    ],
+    "GD_Orchid_BossWeapons.SniperRifles.Sniper_Maliwan_3_Pimpernel": [
+        3,
+        3
+    ],
+    "GD_Sage_HarpoonGun.Balance.Sage_HarpoonGun_Balance": [
+        3,
+        5
+    ],
+    "GD_Sage_RaidWeapons.sniper.Sage_Seraph_HawkEye_Balance": [
+        8,
+        3
+    ],
+    "GD_Sage_RaidWeapons.Pistol.Sage_Seraph_Infection_Balance": [
+        8,
+        0
+    ],
+    "GD_Sage_RaidWeapons.Shotgun.Sage_Seraph_Interfacer_Balance": [
+        8,
+        1
+    ],
+    "GD_Sage_RaidWeapons.AssaultRifle.Sage_Seraph_LeadStorm_Balance": [
+        8,
+        4
+    ],
+    "GD_Sage_Weapons.Pistols.Pistol_Jakobs_3_Rex": [
+        3,
+        0
+    ],
+    "GD_Sage_Weapons.Shotgun.SG_Jakobs_3_Hydra": [
+        3,
+        1
+    ],
+    "GD_Sage_Weapons.AssaultRifle.AR_Jakobs_3_DamnedCowboy": [
+        3,
+        4
+    ],
+    "GD_Sage_Weapons.SniperRifles.Sniper_Jakobs_3_ElephantGun": [
+        3,
+        3
+    ],
+    "GD_Sage_Weapons.AssaultRifle.AR_Bandit_3_Chopper": [
+        3,
+        4
+    ],
+    "GD_Sage_Weapons.SMG.SMG_Hyperion_3_YellowJacket": [
+        5,
+        2
+    ],
+    "GD_Sage_Weapons.Shotgun.SG_Jakobs_3_Twister": [
+        3,
+        1
+    ],
+    "GD_Flynt.Weapons.AR_Flynt": [
+        2,
+        4
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Assassin": [
+        4,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Assassin_01_Common": [
+        1,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Assassin_02_Uncommon": [
+        2,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Assassin_03_Rare": [
+        3,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Assassin_04_VeryRare": [
+        4,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Assassin_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Assassin_06_SlayerOfTerramorphous": [
+        6,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Mercenary": [
+        4,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Mercenary_01_Common": [
+        1,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Mercenary_02_Uncommon": [
+        2,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Mercenary_03_Rare": [
+        3,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Mercenary_04_VeryRare": [
+        4,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Mercenary_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Mercenary_06_SlayerOfTerramorphous": [
+        6,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Siren": [
+        3,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Siren_01_Common": [
+        1,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Siren_02_Uncommon": [
+        2,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Siren_03_Rare": [
+        3,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Siren_04_VeryRare": [
+        4,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Siren_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Siren_06_SlayerOfTerramorphous": [
+        6,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier": [
+        2,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_01_Common": [
+        1,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_02_Uncommon": [
+        2,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_03_Rare": [
+        3,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_04_VeryRare": [
+        4,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_06_SlayerOfTerramorphous": [
+        6,
+        6
+    ],
+    "GD_Lilac_ClassMods.BalanceDefs.BalDef_ClassMod_Psycho": [
+        3,
+        6
+    ],
+    "GD_Lilac_ClassMods.BalanceDefs.BalDef_ClassMod_Psycho_01_Common": [
+        1,
+        6
+    ],
+    "GD_Lilac_ClassMods.BalanceDefs.BalDef_ClassMod_Psycho_02_Uncommon": [
+        2,
+        6
+    ],
+    "GD_Lilac_ClassMods.BalanceDefs.BalDef_ClassMod_Psycho_03_Rare": [
+        3,
+        6
+    ],
+    "GD_Lilac_ClassMods.BalanceDefs.BalDef_ClassMod_Psycho_04_VeryRare": [
+        4,
+        6
+    ],
+    "GD_Lilac_ClassMods.BalanceDefs.BalDef_ClassMod_Psycho_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_Lilac_ClassMods.BalanceDefs.BalDef_ClassMod_Psycho_06_SlayerOfTerramorphous": [
+        6,
+        6
+    ],
+    "GD_Tulip_ItemGrades.ClassMods.BalDef_ClassMod_Mechromancer": [
+        2,
+        6
+    ],
+    "GD_Tulip_ItemGrades.ClassMods.BalDef_ClassMod_Mechromancer_01_Common": [
+        1,
+        6
+    ],
+    "GD_Tulip_ItemGrades.ClassMods.BalDef_ClassMod_Mechromancer_02_Uncommon": [
+        2,
+        6
+    ],
+    "GD_Tulip_ItemGrades.ClassMods.BalDef_ClassMod_Mechromancer_03_Rare": [
+        3,
+        6
+    ],
+    "GD_Tulip_ItemGrades.ClassMods.BalDef_ClassMod_Mechromancer_04_VeryRare": [
+        4,
+        6
+    ],
+    "GD_Tulip_ItemGrades.ClassMods.BalDef_ClassMod_Mechromancer_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_Tulip_ItemGrades.ClassMods.BalDef_ClassMod_Mechromancer_06_SlayerOfTerramorphous": [
+        6,
+        6
+    ],
+    "GD_Aster_ItemGrades.ClassMods.BalDef_ClassMod_Aster_Assassin": [
+        4,
+        6
+    ],
+    "GD_Aster_ItemGrades.ClassMods.BalDef_ClassMod_Aster_Mechromancer": [
+        2,
+        6
+    ],
+    "GD_Aster_ItemGrades.ClassMods.BalDef_ClassMod_Aster_Merc": [
+        2,
+        6
+    ],
+    "GD_Aster_ItemGrades.ClassMods.BalDef_ClassMod_Aster_Psycho": [
+        4,
+        6
+    ],
+    "GD_Aster_ItemGrades.ClassMods.BalDef_ClassMod_Aster_Siren": [
+        4,
+        6
+    ],
+    "GD_Aster_ItemGrades.ClassMods.BalDef_ClassMod_Aster_Soldier": [
+        3,
+        6
+    ],
+    "GD_Lobelia_ItemGrades.ClassMods.BalDef_ClassMod_Lobelia_Assassin_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_Lobelia_ItemGrades.ClassMods.BalDef_ClassMod_Lobelia_Mechromancer_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_Lobelia_ItemGrades.ClassMods.BalDef_ClassMod_Lobelia_Psycho_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_Lobelia_ItemGrades.ClassMods.BalDef_ClassMod_Lobelia_Siren_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_Lobelia_ItemGrades.ClassMods.BalDef_ClassMod_Lobelia_Soldier_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_Iris_ItemPools.BalDefs.BalDef_ClassMod_Torgue_Common": [
+        4,
+        6
+    ],
+    "GD_Lobelia_ItemGrades.ClassMods.BalDef_ClassMod_Lobelia_Merc_05_Legendary": [
+        6,
+        6
+    ],
+    "GD_Z1_CordiallyInvitedData.MW_Teapot": [
+        4,
+        4
+    ],
+    "GD_Z1_RockPaperGenocideData.MW_RockPaper_Slag": [
+        2,
+        0
+    ],
+    "GD_Z1_RockPaperGenocideData.MW_RockPaper_Corrosive": [
+        2,
+        0
+    ],
+    "GD_Z1_RockPaperGenocideData.MW_RockPaper_Fire": [
+        2,
+        0
+    ],
+    "GD_Z1_RockPaperGenocideData.MW_RockPaper_Shock": [
+        2,
+        0
+    ],
+    "GD_Z2_TrailerTrashinData.FlareGun": [
+        3,
+        0
+    ],
+    "GD_Z3_MedicalMystery2Data.MW_MedicalMystery_AlienGun": [
+        5,
+        4
+    ],
+    "GD_Aster_ClapTrapBeardData.MW_ClaptrapBeard_GrogNozzle": [
+        3,
+        0
+    ],
+    "GD_IrisDL3_CommAppealData.MW_CommAppeal_Torgue": [
+        3,
+        1
+    ]
+}
