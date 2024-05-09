@@ -1,19 +1,17 @@
 import importlib
 import inspect
 import os
-from typing import Callable
+import sys
+from typing import List, Optional
 
-import unrealsdk
-import Mods
 from Mods import ModMenu
+from Mods.SpeedrunPractice.hooks import SPHooks
+from Mods.SpeedrunPractice.keybinds import SPKeybind, SPKeybinds
+from Mods.SpeedrunPractice.options import SPOptions
+from Mods.SpeedrunPractice.utilities import RunCategory, PlayerClass, enum_from_value, get_current_player_controller
+from unrealsdk import FindObject, Log
 
-from Mods.UserFeedback import TextInputBox
-from Mods.SpeedrunPractice.checkpoints import CheckpointSaver, SaveNameInput
-from Mods.SpeedrunPractice.glitch_manager import GlitchManager
-from Mods.SpeedrunPractice.utilities import Utilities
-from Mods.SpeedrunPractice.randomize_gear import GearRandomizer
-
-_DefaultGameInfo = unrealsdk.FindObject("WillowCoopGameInfo", "WillowGame.Default__WillowCoopGameInfo")
+_DefaultGameInfo = FindObject("WillowCoopGameInfo", "WillowGame.Default__WillowCoopGameInfo")
 _MODDIR = os.path.dirname(os.path.abspath(inspect.getsourcefile(lambda: None)))
 _CONFIG_PATH = os.path.join(_MODDIR, 'config.json')
 _STATE_PATH = os.path.join(_MODDIR, 'state.json')
@@ -22,249 +20,114 @@ _STATE_PATH = os.path.join(_MODDIR, 'state.json')
 class SpeedrunPractice(ModMenu.SDKMod):
     Name: str = "Speedrun Practice"
     Author: str = "Justin99"
-    Description: str = "Various utilities for practicing speedruns on current patch"
-    Version: str = "1.4.2"
+    Description: str = "Various utilities for practicing speedruns"
+    Version: str = "1.5"
     SupportedGames: ModMenu.Game = ModMenu.Game.BL2
     Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility  # One of Utility, Content, Gameplay, Library; bitwise OR'd together
     SaveEnabledState: ModMenu.EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings
 
-    Keybinds = [
-        ModMenu.Keybind("Set Buckup Stacks", "None"),
-        ModMenu.Keybind("Set Anarchy Stacks", "None"),
-        ModMenu.Keybind("Set Free Shot Stacks", "None"),
-        ModMenu.Keybind("Set Smasher Chance Stacks", "None"),
-        ModMenu.Keybind("Set Smasher SMASH Stacks", "None"),
-        ModMenu.Keybind("Merge Equipped Weapons", "None"),
-        ModMenu.Keybind("Save Checkpoint", "None"),
-        ModMenu.Keybind("Load Checkpoint State", "None"),
-        ModMenu.Keybind("Show Stacks/Crit", "None"),
-        ModMenu.Keybind("Randomize Gear!", "None")
-    ]
-
-    def handle_stacks(self, func: Callable[[int, str], None], title: str, ref: str = '') -> None:
-        """Handle input box creation for various actions"""
-        input_box = TextInputBox(title, PausesGame=True)
-
-        def OnSubmit(msg: str) -> None:
-            if msg:
-                target_val = Utilities.try_parse_int(msg)
-                if target_val >= 0:
-                    func(target_val, ref)
-                else:
-                    unrealsdk.Log("Value must be greater than 0")
-
-        input_box.OnSubmit = OnSubmit
-        input_box.Show()
-
-    def GameInputPressed(self, input) -> None:
-        """Handle methods that need the class instance here"""
-        glitches = GlitchManager()
-
-        if input.Name == "Set Buckup Stacks":
-            self.handle_stacks(glitches.set_skill_stacks, input.Name, "GD_Tulip_DeathTrap.Skills.Skill_ShieldBoost_Player")
-        elif input.Name == "Set Anarchy Stacks":
-            self.handle_stacks(glitches.set_anarchy_stacks, input.Name)
-        elif input.Name == "Set Free Shot Stacks":
-            self.handle_stacks(glitches.set_skill_stacks, input.Name, "GD_Weap_Launchers.Skills.Skill_VladofHalfAmmo")
-        elif input.Name == "Set Smasher Chance Stacks":
-            self.handle_stacks(glitches.set_skill_stacks, input.Name, "GD_Weap_AssaultRifle.Skills.Skill_EvilSmasher")
-        elif input.Name == "Set Smasher SMASH Stacks":
-            self.handle_stacks(glitches.set_skill_stacks, input.Name, "GD_Weap_AssaultRifle.Skills.Skill_EvilSmasher_SMASH")
-        elif input.Name == "Merge Equipped Weapons":
-            glitches.merge_all_equipped_weapons()
-        elif input.Name == "Save Checkpoint":
-            save_name_input = SaveNameInput("Character Save Name", PausesGame=True)
-            save_name_input.Show()
-        elif input.Name == "Load Checkpoint State":
-            checkpoint_saver = CheckpointSaver(None)
-            checkpoint_saver.load_game_state()
-        elif input.Name == "Show Stacks/Crit":
-            glitches.show_state()
-        elif input.Name == "Randomize Gear!":
-            gear_randomizer = GearRandomizer()
-            gear_randomizer.randomize_gear()
-
+    Keybinds: List[SPKeybind]
+    Options: List[ModMenu.Options.Base]
 
     def __init__(self):
-        self.expansions = []
-        self.JakobsAutoFire = ModMenu.Options.Boolean(
-            Caption="Automatic Jakobs Shotguns",
-            Description="Makes Jakobs shotguns automatic to mimic freescroll macro functionality",
-            StartingValue=False,
-            Choices=("Off", "On")
-        )
-        self.DisableExpansionTravel = ModMenu.Options.Boolean(
-            Caption="Disable Expansion Travel",
-            Description="Removes expansion locations from Fast Travel menus",
-            StartingValue=False,
-            Choices=("Off", "On")
-        )
-        self.Options = [
-            self.JakobsAutoFire,
-            self.DisableExpansionTravel,
-        ]
+        self.sp_options = SPOptions()
+        self.sp_hooks = SPHooks()
+        self.sp_keybinds = SPKeybinds(self.sp_options)
+
+        self.Options = self.sp_options.Options
+        self.Keybinds = self.sp_keybinds.Keybinds
+
+        self.player_class: Optional[PlayerClass] = None
+        self.run_category: Optional[RunCategory] = None
+
+    def disable_all(self):
+        self.sp_keybinds.disable()
+        self.sp_hooks.disable()
+        self.sp_options.disable()
+
+    def enable_all(self):
+        self.sp_options.enable(self.player_class, self.run_category)
+        self.sp_hooks.enable(self.player_class, self.run_category)
+        self.sp_keybinds.enable(self.player_class, self.run_category)
+
+        self.Options = self.sp_options.Options
+        self.Keybinds = self.sp_keybinds.Keybinds
+        self.Keybinds.sort(key=lambda x: getattr(x, 'order', 100) + 1000 * int(x.IsHidden))  # Non-active keybinds de-prioritized
 
     def ModOptionChanged(self, option: ModMenu.Options.Base, new_value) -> None:
-        """For anything that needs to be called on changing an option in the game menu"""
-        if option == self.JakobsAutoFire:
-            glitches = GlitchManager()
-            glitches.handle_jakobs_auto(new_value)
-        if option == self.DisableExpansionTravel:
-            self.handle_expansion_fast_travel()
+        """For anything that needs to be called on changing an option in the game menu."""
 
-    @ModMenu.Hook("Engine.Actor.TriggerGlobalEventClass")
-    def set_pickup_radius(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                          params: unrealsdk.FStruct) -> bool:
-        """Mimic version 1.1 behavior on bulk pickup radius and skill stacking"""
-        if params.InEventClass.Name == 'WillowSeqEvent_PlayerJoined':
-            PC = Utilities.get_current_player_controller()
-            PC.ConsoleCommand(f"set GD_Globals.General.Globals PickupRadius 200")
-            PC.ConsoleCommand(f"set Behavior_ActivateSkill bNoSkillStacking False")
-        return True
+        option.CurrentValue = new_value  # Somehow needed to update original object.
+        self.disable_all()
+        if option == self.sp_options.RunCatOption:
+            if self.player_class:
+                self.sp_options.PlayerRunCategory.CurrentValue[self.player_class.value] = new_value
+            self.run_category = enum_from_value(RunCategory, new_value)
+        self.enable_all()
 
-    def handle_expansion_fast_travel(self):
-        """ Remove expansions from DLC manager so that they don't show up in FT. Add them back in if the option is
-        turned back off."""
-        dlc_manager = unrealsdk.GetEngine().GetDLCManager()
-        if self.DisableExpansionTravel.CurrentValue:
-            if len(dlc_manager.Expansions) > 0:
-                for expansion in dlc_manager.Expansions:
-                    self.expansions.append(expansion)
-                dlc_manager.Expansions = []
-        else:
-            if len(dlc_manager.Expansions) == 0 and len(self.expansions) > 0:
-                dlc_manager.Expansions = self.expansions  # This makes a copy since Expansions is FArray and not a list
-                self.expansions = []
-
-    @ModMenu.Hook('WillowGame.WillowDownloadableContentManager.HasCompatibilityData')
-    def hook_dlc_manager(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                         params: unrealsdk.FStruct) -> bool:
-        """Hooking this function to get FT updated when BL2 is first started."""
-        self.handle_expansion_fast_travel()
-        return True
-
-    @ModMenu.Hook('WillowGame.WillowPlayerController.SaveGame')
-    def enable_divide_fast_travel(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                                  params: unrealsdk.FStruct) -> bool:
-        """Enables Three Horns Divide FT as soon as Divide mission reached, allows skipping station like in patch 1.1"""
-        if 'IceEast' not in caller.ActivatedTeleportersList:
-            if caller.GetActivePlotCriticalMissionNumber() >= 4:
-                temp = list(caller.ActivatedTeleportersList)
-                temp.append('IceEast')
-                caller.ActivatedTeleportersList = temp
-        return True
-
-    def _apply_full_amp(self, active_weapon, impact_shield_skill):
-        """
-        Apply full amp damage to every pellet. We replace the skill scale constant with the
-        projectile count to effectively give every pellet full amp damage. Won't work with Gunzerk probably.
-        """
-        projectiles_attr = unrealsdk.FindObject("AttributeDefinition", "D_Attributes.Weapon.WeaponProjectilesPerShot")
-        projectiles = projectiles_attr.GetValue(active_weapon)[0]
-
-        weapon_damage_effect = [effect for effect in impact_shield_skill.SkillEffects if
-                                effect.EffectData.AttributeToModify.Name == "WeaponDamage"][0]
-
-        weapon_damage_effect.EffectData.BaseModifierValue.BaseValueScaleConstant = projectiles
-        return
-
-    @ModMenu.Hook('WillowGame.Skill.Resume')
-    def amp_on_skill_resume(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                            params: unrealsdk.FStruct) -> bool:
-        """Adjust damage bonus any time the skill is resumed."""
-        if caller.Definition.Name not in ['Impact_Shield_Skill_Legendary', 'Impact_Shield_Skill']:
-            return True
-        PC = Utilities.get_current_player_controller()
-        active_weapon = PC.GetActiveOrBestWeapon()
-        self._apply_full_amp(active_weapon, caller)
-        return True
-
-    @ModMenu.Hook('WillowGame.WillowWeapon.OnEquip')
-    def amp_on_equip(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                     params: unrealsdk.FStruct) -> bool:
-        """Adjust damage bonus when swapping to a new weapon with full shield
-        since it may have a different projectile count."""
-        PC = Utilities.get_current_player_controller()
-        if caller != PC.GetActiveOrBestWeapon():
-            return True
-        impact_skill_names = ['Impact_Shield_Skill_Legendary', 'Impact_Shield_Skill']
-
-        # Get impact shield skills. Sometimes there can be paused skills that never go away, so we only
-        # want to apply to active skills. The Skill.Resume() hook will cover any we missed.
-        glitches = GlitchManager()
-        impact_shield_skills = glitches.get_skill_stacks(impact_skill_names)
-        for skill in impact_shield_skills:
-            if skill.SkillState == 1:
-                self._apply_full_amp(caller, skill)
-        return True
-
-    @ModMenu.Hook('WillowGame.WillowPlayerController.ModalGameMenuOpening')
-    def hook_menu_open(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction, params: unrealsdk.FStruct) -> bool:
-        """Allow merging weapons to keep crit bonuses, healing, etc. This follows the exact logic that made
-        the glitch possible in the first place. They later added the ForcePutDownInactiveWeapon call to the
-        ModalGameMenuOpening method to fix it, so we're just blocking it."""
-
-        def block_putdown(caller: unrealsdk.UObject, function: unrealsdk.UFunction, params: unrealsdk.FStruct) -> bool:
-            return False
-
-        unrealsdk.RunHook('WillowGame.WillowWeapon.ForcePutDownInactiveWeapon', 'block_putdown', block_putdown)
-        caller.ModalGameMenuOpening()
-        unrealsdk.RemoveHook('WillowGame.WillowWeapon.ForcePutDownInactiveWeapon', 'block_putdown')
+    @ModMenu.Hook('WillowGame.WillowGFxMovie.ShowAchievementsUI')
+    def block_achievements(self, caller, function, params) -> bool:
         return False
 
-    @ModMenu.Hook('WillowGame.WillowInventoryManager.RemoveFromInventory')
-    def hook_remove_from_inventory(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction,
-                                   params: unrealsdk.FStruct) -> bool:
-        """Allow dropping weapons to keep skill stacks. This follows the exact logic that made
-        the glitch possible in the first place. They later added the OnUnequip call to the
-        RemoveFromInventory method to fix it, so we're just blocking it."""
+    @ModMenu.Hook('WillowGame.WillowPlayerController.FinishSaveGameLoad')
+    def load_character(self, caller, function, params) -> bool:
+        if not params.SaveGame:
+            return True
+        self.disable_all()
 
-        def block_onunequip(caller: unrealsdk.UObject, function: unrealsdk.UFunction, params: unrealsdk.FStruct) -> bool:
-            return False
+        player_class_str = params.SaveGame.PlayerClassDefinition.Name
+        self.player_class = enum_from_value(PlayerClass, player_class_str)
+        self.run_category = enum_from_value(RunCategory, self.sp_options.PlayerRunCategory.CurrentValue.get(self.player_class.value))
+        self.sp_options.RunCatOption.CurrentValue = self.run_category.value
 
-        unrealsdk.RunHook('WillowGame.WillowWeapon.OnUnequip', 'block_onunequip', block_onunequip)
-        caller.RemoveFromInventory(params.ItemToRemove, params.bCanDrop)
-        unrealsdk.RemoveHook('WillowGame.WillowWeapon.OnUnequip', 'block_onunequip')
-        return False
+        self.enable_all()
+        return True
 
     def Enable(self) -> None:
+
         super().Enable()
-        unrealsdk.Log("SpeedrunPractice Enabled")
+
+        player_standin = FindObject("PlayerStandIn", "menumap.TheWorld:PersistentLevel.PlayerStandIn_2")
+        PC = get_current_player_controller()
+        if player_standin and player_standin.SaveGame:
+            self.player_class = enum_from_value(PlayerClass, player_standin.SaveGame.PlayerClassDefinition.Name)
+            self.run_category = enum_from_value(RunCategory, self.sp_options.PlayerRunCategory.CurrentValue.get(self.player_class.value))
+            self.enable_all()
+        elif PC and PC.PlayerClass:
+            self.player_class = enum_from_value(PlayerClass, PC.PlayerClass.Name)
+            self.run_category = enum_from_value(RunCategory, self.sp_options.PlayerRunCategory.CurrentValue.get(self.player_class.value))
+            self.enable_all()
+
+        Log("SpeedrunPractice Enabled")
 
     def Disable(self) -> None:
-        unrealsdk.Log("SpeedrunPractice Disabled")
-        glitches = GlitchManager()
-        # Turn off Jakobs auto
-        glitches.handle_jakobs_auto(False)
-        # Turn off limited travel places, but keep setting for when mod gets enabled again
-        if self.DisableExpansionTravel:
-            self.DisableExpansionTravel.CurrentValue = False
-            self.handle_expansion_fast_travel()
-            self.DisableExpansionTravel.CurrentValue = True
+        self.disable_all()
         super().Disable()
-
-
+        Log("SpeedrunPractice Disabled")
 
 
 instance = SpeedrunPractice()
 
 if __name__ == "__main__":
-    importlib.reload(Mods.SpeedrunPractice.utilities)
-    importlib.reload(Mods.SpeedrunPractice.glitch_manager)
-    importlib.reload(Mods.SpeedrunPractice.checkpoints)
-    importlib.reload(Mods.SpeedrunPractice.randomize_gear)
-    from Mods.SpeedrunPractice.checkpoints import CheckpointSaver, SaveNameInput
-    from Mods.SpeedrunPractice.glitch_manager import GlitchManager
-    from Mods.SpeedrunPractice.utilities import Utilities
-    from Mods.SpeedrunPractice.randomize_gear import GearRandomizer
+    for submodule_name in ('utilities', 'checkpoints', 'randomize_gear', 'skills', 'hooks', 'options', 'keybinds'):
+        module = sys.modules.get("Mods.SpeedrunPractice." + submodule_name)
+        # Log(module)
+        if module:
+            importlib.reload(module)
 
-    unrealsdk.Log(f"[{instance.Name}] Manually loaded")
+    # from Mods.SpeedrunPractice import utilities, checkpoints, randomize_gear, skills, hooks, options, keybinds
+    from Mods.SpeedrunPractice.hooks import SPHooks
+    from Mods.SpeedrunPractice.keybinds import SPKeybind, SPKeybinds
+    from Mods.SpeedrunPractice.options import SPOptions
+    from Mods.SpeedrunPractice.utilities import RunCategory, PlayerClass, enum_from_value, get_current_player_controller
+
+    Log(f"[{instance.Name}] Manually loaded")
     for mod in ModMenu.Mods:
         if mod.Name == instance.Name:
             if mod.IsEnabled:
                 mod.Disable()
             ModMenu.Mods.remove(mod)
-            unrealsdk.Log(f"[{instance.Name}] Removed last instance")
+            Log(f"[{instance.Name}] Removed last instance")
 
             # Fixes inspect.getfile()
             instance.__class__.__module__ = mod.__class__.__module__

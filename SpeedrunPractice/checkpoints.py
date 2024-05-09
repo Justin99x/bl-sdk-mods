@@ -1,15 +1,18 @@
 import inspect
-import json
 import os
 import stat
+from pathlib import Path
+from typing import Optional
 
-import unrealsdk
-from unrealsdk import Log
+from unrealsdk import FindObject
+
+from Mods.SpeedrunPractice.skills import get_skill_stacks, get_designer_attribute_value, set_designer_attribute_value, set_skill_stacks
+from Mods.SpeedrunPractice.utilities import apply_position, feedback, get_current_player_controller, get_position, \
+    get_save_dir_from_config
+from Mods.SpeedrunPractice.utilities import RunCategory, PlayerClass
 from Mods.UserFeedback import TextInputBox
-from Mods.SpeedrunPractice.utilities import Utilities
-from Mods.SpeedrunPractice.glitch_manager import GlitchManager
 
-_DefaultGameInfo = unrealsdk.FindObject("WillowCoopGameInfo", "WillowGame.Default__WillowCoopGameInfo")
+_DefaultGameInfo = FindObject("WillowCoopGameInfo", "WillowGame.Default__WillowCoopGameInfo")
 _MODDIR = os.path.dirname(os.path.abspath(inspect.getsourcefile(lambda: None)))
 _CONFIG_PATH = os.path.join(_MODDIR, 'config.json')
 _STATE_PATH = os.path.join(_MODDIR, 'state.json')
@@ -62,23 +65,24 @@ PLAYER_STATS_MAP = {
 
 
 class CheckpointSaver:
-    """Class for saving read only copy of the current game and saving key values in local state.json file."""
+    """Class for saving read only copy of the current game and saving key values as player stats"""
 
-    def __init__(self, new_save_name):
-        self.PC = Utilities.get_current_player_controller()
+    def __init__(self, new_save_name, player_class: Optional[PlayerClass] = None, run_category: Optional[RunCategory] = None):
+        self.PC = get_current_player_controller()
         self.new_save_name = new_save_name
-        self.save_dir = Utilities.get_save_dir_from_config(_CONFIG_PATH)
+        self.save_dir = get_save_dir_from_config(_CONFIG_PATH)
         self.current_file_name = self.PC.GetWillowGlobals().GetWillowSaveGameManager().LastLoadedFilePath
         self.current_file_path = self.get_current_file_path()
         self.new_filename = self.get_next_open_filename()
-        self.glitches = GlitchManager()
+        self.player_class = player_class
+        self.run_category = run_category
 
     def get_current_file_path(self) -> str:
         """Current file path based on save directory and game provided filename. Will fail if config.json not
         set correctly."""
         current_file_path = os.path.join(self.save_dir, self.current_file_name)
         if not (os.path.exists(current_file_path) and os.path.isfile(current_file_path)):
-            Utilities.feedback("Error finding current filepath")
+            feedback(self.PC, "Error finding current filepath")
             raise FileNotFoundError("Error finding current filepath")
         return current_file_path
 
@@ -109,37 +113,6 @@ class CheckpointSaver:
         self.PC.SetPlayerUINamePreference(current_save_name)
         self.PC.SaveGame(self.current_file_name)
 
-    def get_game_state(self):
-        """Gets the current state of the game for values that cannot be saved in the game save file."""
-        state = {}
-        # Buck up, anarchy, and free shots
-        state['buckup_stacks'] = len(self.glitches.get_skill_stacks(['Skill_ShieldBoost_Player']))
-        state['anarchy_stacks'] = self.glitches.get_anarchy_stacks()
-        state['freeshot_stacks'] = len(self.glitches.get_skill_stacks(['Skill_VladofHalfAmmo']))
-        state['smasher_stacks'] = len(self.glitches.get_skill_stacks(['Skill_EvilSmasher']))
-        state['SMASH_stacks'] = len(self.glitches.get_skill_stacks(['Skill_EvilSmasher_SMASH']))
-
-        # Weapons
-        weapons = self.PC.GetPawnInventoryManager().GetEquippedWeapons()
-
-        state['weapons'] = [0, 0, 0, 0, 0]  # Active weapon slot followed by bools for merged weapons or not.
-        state['weapons'][0] = self.PC.GetActiveOrBestWeapon().QuickSelectSlot
-        for weapon in weapons:
-            if weapon:
-                state[f'weapon{weapon.QuickSelectSlot}_clip'] = weapon.ReloadCnt
-                if len(weapon.ExternalAttributeModifiers) > 0:
-                    state['weapons'][weapon.QuickSelectSlot] = 1
-        state['weapons'] = int(''.join(str(val) for val in state['weapons']))
-
-        # Position (using commander)
-        position = Utilities.get_position(self.PC)
-        state['X'] = int(position['X'] * 100)
-        state['Y'] = int(position['Y'] * 100)
-        state['Z'] = int(position['Z'] * 100)
-        state['Pitch'] = int(position['Pitch'] * 100)
-        state['Yaw'] = int(position['Yaw'] * 100)
-        return state
-
     def set_player_stats(self, state):
         """Sets the player stats on the PC, intent is to save game right after"""
         stats = self.PC.PlayerStats
@@ -161,70 +134,110 @@ class CheckpointSaver:
         state['position']['Yaw'] = int(state['Yaw'] / 100)
         return state
 
-    def save_checkpoint(self):
-        """Saves game and game state with the hash of the save file."""
-        state = self.get_game_state()
-        self.set_player_stats(state)
-        self.save_game_copy()
+    def get_game_state(self):
+        """Gets the current state of the game for values that cannot be saved in the game save file."""
+        state = {}
+        # Buck up, anarchy, and free shots
+        if self.player_class == PlayerClass.Gaige:
+            state['buckup_stacks'] = len(get_skill_stacks(self.PC, ['Skill_ShieldBoost_Player']))
+            state['anarchy_stacks'] = int(
+                get_designer_attribute_value(self.PC, 'GD_Tulip_Mechromancer_Skills.Misc.Att_Anarchy_NumberOfStacks'))
+        if self.run_category == RunCategory.AllQuests:
+            state['smasher_stacks'] = len(get_skill_stacks(self.PC, ['Skill_EvilSmasher']))
+            state['SMASH_stacks'] = len(get_skill_stacks(self.PC, ['Skill_EvilSmasher_SMASH']))
+        if self.run_category in [RunCategory.AnyPercent, RunCategory.AllQuests]:
+            state['freeshot_stacks'] = len(get_skill_stacks(self.PC, ['Skill_VladofHalfAmmo']))
+
+            # Weapons - don't want for current patch.
+            weapons = self.PC.GetPawnInventoryManager().GetEquippedWeapons()
+
+            state['weapons'] = [0, 0, 0, 0, 0]  # Active weapon slot followed by bools for merged weapons or not.
+            state['weapons'][0] = self.PC.GetActiveOrBestWeapon().QuickSelectSlot
+            for weapon in weapons:
+                if weapon:
+                    state[f'weapon{weapon.QuickSelectSlot}_clip'] = weapon.ReloadCnt
+                    if len(weapon.ExternalAttributeModifiers) > 0:
+                        state['weapons'][weapon.QuickSelectSlot] = 1
+            state['weapons'] = int(''.join(str(val) for val in state['weapons']))
+
+        position = get_position(self.PC)
+        state['X'] = int(position['X'] * 100)
+        state['Y'] = int(position['Y'] * 100)
+        state['Z'] = int(position['Z'] * 100)
+        state['Pitch'] = int(position['Pitch'] * 100)
+        state['Yaw'] = int(position['Yaw'] * 100)
+        return state
 
     def load_game_state(self):
         """Loads the game state by applying glitches and the saved map position."""
         load_state = self.get_player_stats()
         if load_state['position']['X'] == 0 and load_state['position']['Y'] == 0:
-            Utilities.feedback("No game state data found for this save file")
+            feedback(self.PC, "No game state data found for this save file")
             return
 
+        gaige_msg, free_shot_msg, smasher_msg, merge_msg = '', '', '', ''
+
         # Equipped weapon and clip sizes
-        inventory_manager = self.PC.GetPawnInventoryManager()
-        weapons = inventory_manager.GetEquippedWeapons()
-        for weapon in weapons:
-            # Use drop pickups to get our desired active weapon in place
-            if weapon and load_state['weapons'][0] != weapon.QuickSelectSlot:
-                inventory_manager.RemoveFromInventory(weapon)
-                inventory_manager.AddInventory(weapon, False)
-            # Set clip sizes
-            if weapon:
-                weapon.ReloadCnt = load_state[f'weapon{weapon.QuickSelectSlot}_clip']
-                weapon.LastReloadCnt = weapon.ReloadCnt
+        if self.run_category in [RunCategory.AnyPercent, RunCategory.AllQuests]:
+            inventory_manager = self.PC.GetPawnInventoryManager()
+            weapons = inventory_manager.GetEquippedWeapons()
+            for weapon in weapons:
+                # Use drop pickups to get our desired active weapon in place
+                if weapon and load_state['weapons'][0] != weapon.QuickSelectSlot:
+                    inventory_manager.RemoveFromInventory(weapon)
+                    inventory_manager.AddInventory(weapon, False)
+                # Set clip sizes
+                if weapon:
+                    weapon.ReloadCnt = load_state[f'weapon{weapon.QuickSelectSlot}_clip']
+                    weapon.LastReloadCnt = weapon.ReloadCnt
 
-        # Merge weapons
-        merge_msg = ''
-        prefix = '\t'
-        for weapon in weapons:
-            if weapon and load_state['weapons'][weapon.QuickSelectSlot] == 1:
-                weapon.ApplyAllExternalAttributeEffects()
-                merge_msg = merge_msg + prefix + weapon.GetShortHumanReadableName()
-                prefix = '\n\t'
+            # Merge weapons
+            merge_msg = f"\nWeapons Merged:"
+            for weapon in weapons:
+                if weapon and load_state['weapons'][weapon.QuickSelectSlot] == 1:
+                    weapon.ApplyAllExternalAttributeEffects()
+                    merge_msg = merge_msg + '\n\t' + weapon.GetShortHumanReadableName()
 
-        # Buck up, free shots, anarchy, and smasher. After weapon stuff so no issues with deactivations.
-        self.glitches.set_skill_stacks(load_state['buckup_stacks'],
-                                       'GD_Tulip_DeathTrap.Skills.Skill_ShieldBoost_Player')
-        self.glitches.set_anarchy_stacks(load_state['anarchy_stacks'])
-        self.glitches.set_skill_stacks(load_state['freeshot_stacks'], 'GD_Weap_Launchers.Skills.Skill_VladofHalfAmmo')
-        self.glitches.set_skill_stacks(load_state['smasher_stacks'], 'GD_Weap_AssaultRifle.Skills.Skill_EvilSmasher')
-        self.glitches.set_skill_stacks(load_state['SMASH_stacks'],
-                                       'GD_Weap_AssaultRifle.Skills.Skill_EvilSmasher_SMASH')
+            # Buck up, free shots, anarchy, and smasher. After weapon stuff so no issues with deactivations.
+            set_skill_stacks(self.PC, load_state['freeshot_stacks'], 'GD_Weap_Launchers.Skills.Skill_VladofHalfAmmo')
+            free_shot_msg = f"\nFree Shot Stacks: {load_state['freeshot_stacks']}"
+
+        if self.run_category == RunCategory.AllQuests:
+            set_skill_stacks(self.PC, load_state['smasher_stacks'], 'GD_Weap_AssaultRifle.Skills.Skill_EvilSmasher')
+            set_skill_stacks(self.PC, load_state['SMASH_stacks'], 'GD_Weap_AssaultRifle.Skills.Skill_EvilSmasher_SMASH')
+            smasher_msg = f"\nSmasher Chance Stacks: {load_state['smasher_stacks']}"
+            smasher_msg += f"\nSmasher SMASH Stacks: {load_state['SMASH_stacks']}"
+
+        if self.player_class == PlayerClass.Gaige:
+            set_skill_stacks(self.PC, load_state['buckup_stacks'], 'GD_Tulip_DeathTrap.Skills.Skill_ShieldBoost_Player')
+            set_designer_attribute_value(self.PC, load_state['anarchy_stacks'],
+                                         'GD_Tulip_Mechromancer_Skills.Misc.Att_Anarchy_NumberOfStacks')
+            gaige_msg += f"\nBuck Up Stacks: {load_state['buckup_stacks']}"
+            gaige_msg += f"\nAnarchy Stacks: {load_state['anarchy_stacks']}"
 
         # Position
-        Utilities.apply_position(self.PC, load_state['position'])
+        apply_position(self.PC, load_state['position'])
 
-        Utilities.feedback(
-            f"Game State Loaded" +
-            f"\nBuck Up Stacks: {load_state['buckup_stacks']}" +
-            f"\nAnarchy Stacks: {load_state['anarchy_stacks']}" +
-            f"\nFree Shot Stacks: {load_state['freeshot_stacks']}" +
-            f"\nSmasher Chance Stacks: {load_state['smasher_stacks']}" +
-            f"\nSmasher SMASH Stacks: {load_state['SMASH_stacks']}" +
-            f"\nWeapons Merged:" +
-            f"\n{merge_msg}"
-        )
+        msg = f"Game State Loaded" + gaige_msg + free_shot_msg + smasher_msg + merge_msg
+        feedback(self.PC, msg)
 
+    def save_checkpoint(self):
+        """Saves game and game state"""
+        state = self.get_game_state()
+        self.set_player_stats(state)
+        self.save_game_copy()
 
-class SaveNameInput(TextInputBox):
-    """Input box class whose only responsibility is to set the message and call the saver class for handling"""
+    def touch_current_save(self):
+        Path(self.get_current_file_path()).touch(exist_ok=True)
 
-    def OnSubmit(self, Message: str) -> None:
-        """Override base class method. This is called when the text box is closed."""
-        if Message:
-            checkpoint_saver = CheckpointSaver(Message)
-            checkpoint_saver.save_checkpoint()
+def text_input_checkpoint(title: str, player_class: PlayerClass, run_category: RunCategory) -> None:
+    """Handle input box creation for various actions"""
+    input_box = TextInputBox(title, PausesGame=True)
+
+    def OnSubmit(msg: str) -> None:
+        if msg:
+            saver = CheckpointSaver(msg, player_class, run_category)
+            saver.save_checkpoint()
+
+    input_box.OnSubmit = OnSubmit
+    input_box.Show()
