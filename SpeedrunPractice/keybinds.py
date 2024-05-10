@@ -92,9 +92,9 @@ class SPKeybinds(Singleton):
         reset_gunzerk_and_weapons()
         _RestorePosition()
         if self.options.Incite.CurrentValue:
-            activate_skill(PC, 'GD_Mercenary_Skills.Brawn.Incite_Active')
+            set_skill_stacks(PC, 1, 'GD_Mercenary_Skills.Brawn.Incite_Active')
         if self.options.LockedAndLoaded.CurrentValue:
-            activate_skill(PC, 'GD_Mercenary_Skills.Gun_Lust.LockedAndLoaded_Active')
+            set_skill_stacks(PC, 1, 'GD_Mercenary_Skills.Gun_Lust.LockedAndLoaded_Active')
         if self.options.KillSkills.CurrentValue:
             trigger_kill_skills(PC)
 

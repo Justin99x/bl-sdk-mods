@@ -115,7 +115,7 @@ if __name__ == "__main__":
         if module:
             importlib.reload(module)
 
-    # from Mods.SpeedrunPractice import utilities, checkpoints, randomize_gear, skills, hooks, options, keybinds
+    from Mods.SpeedrunPractice import utilities, checkpoints, skills, hooks, options, keybinds
     from Mods.SpeedrunPractice.hooks import SPHooks
     from Mods.SpeedrunPractice.keybinds import SPKeybind, SPKeybinds
     from Mods.SpeedrunPractice.options import SPOptions
