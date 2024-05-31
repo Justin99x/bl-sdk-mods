@@ -9,7 +9,7 @@ from Mods.SpeedrunPractice.skills import activate_skill, get_attribute_value, ge
     set_skill_stacks, text_input_stacks, trigger_kill_skills
 from Mods.SpeedrunPractice.utilities import RunCategory, PlayerClass, Singleton, feedback, get_current_player_controller
 from Mods.SpeedrunPractice.options import SPOptions
-from unrealsdk import FindAll
+from unrealsdk import FStruct, FindAll, FindObject, Log, RemoveHook, RunHook, UFunction, UObject
 
 
 @dataclass
@@ -91,6 +91,7 @@ class SPKeybinds(Singleton):
         PC = get_current_player_controller()
         reset_gunzerk_and_weapons()
         _RestorePosition()
+        PC.Pawn.Velocity = (0, 0, 0)
         if self.options.Incite.CurrentValue:
             set_skill_stacks(PC, 1, 'GD_Mercenary_Skills.Brawn.Incite_Active')
         if self.options.LockedAndLoaded.CurrentValue:
@@ -196,3 +197,4 @@ def set_anarchy_stacks():
 def touch_file():
     saver = CheckpointSaver(None)
     saver.touch_current_save()
+

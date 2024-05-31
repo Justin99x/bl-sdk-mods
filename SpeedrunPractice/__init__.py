@@ -4,6 +4,7 @@ import os
 import sys
 from typing import List, Optional
 
+
 from Mods import ModMenu
 from Mods.SpeedrunPractice.hooks import SPHooks
 from Mods.SpeedrunPractice.keybinds import SPKeybind, SPKeybinds

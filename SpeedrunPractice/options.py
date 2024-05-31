@@ -3,7 +3,7 @@ from typing import List, Optional
 from Mods import ModMenu
 from Mods.ModMenu.Options import Base
 from Mods.SpeedrunPractice.utilities import RunCategory, PlayerClass, Singleton, get_current_player_controller
-from unrealsdk import FindAll, FindObject, GetEngine, Log
+from unrealsdk import FStruct, FindAll, FindObject, GetEngine, Log, RemoveHook, RunHook, UFunction, UObject
 
 
 class SPOptions(Singleton):
@@ -47,6 +47,13 @@ class SPOptions(Singleton):
             Choices=("Off", "On"),
             IsHidden=True
         )
+        self.TravelPortalDisabled = ModMenu.Options.Boolean(
+            Caption="Disable Travel Portal",
+            Description="Disables blue tunnel animation when loading into a map",
+            StartingValue=False,
+            Choices=("Off", "On"),
+            IsHidden=True
+        )
         self.PlayerRunCategory = ModMenu.Options.Hidden(
             Caption="Store last run category for character",
             Description="Allow run category to be set from character load. Whatever category was last used by character will be loaded.",
@@ -60,15 +67,18 @@ class SPOptions(Singleton):
             },
         )
 
+
     @property
     def Options(self) -> List[Base]:
-        return [self.RunCatOption, self.JakobsAutoFire, self.KillSkills, self.Incite, self.LockedAndLoaded, self.PlayerRunCategory]
+        return [self.RunCatOption, self.JakobsAutoFire, self.KillSkills, self.Incite, self.LockedAndLoaded, self.PlayerRunCategory,
+                self.TravelPortalDisabled]
 
     def enable(self, player_class_arg: PlayerClass, run_category_arg: RunCategory):
         self.player_class = player_class_arg
         self.run_category = run_category_arg
 
-        self.enable_options([self.RunCatOption])
+        self.enable_options([self.RunCatOption, self.TravelPortalDisabled])
+        handle_travel_portal(self.TravelPortalDisabled.CurrentValue)
 
         if self.run_category in [RunCategory.AnyPercent, RunCategory.AllQuests]:
             handle_jakobs_auto(self.JakobsAutoFire.CurrentValue)
@@ -84,6 +94,7 @@ class SPOptions(Singleton):
 
         handle_jakobs_auto(False)
         handle_expansion_fast_travel(False)
+        handle_travel_portal(False)
 
         self.disable_options(self.Options)
 
@@ -123,3 +134,18 @@ def handle_jakobs_auto(new_value: bool) -> None:
             f"set WeaponTypeDefinition'GD_Weap_Shotgun.A_Weapons.WT_Jakobs_Shotgun' AutomaticBurstCount 1")
         for js in jakobs_shotguns:
             autoburst_attribute_def.SetAttributeBaseValue(js, 1)
+
+
+def handle_travel_portal(disable_portal: bool):
+    """ Disable travel animation for faster practice"""
+
+    def disable_portal_hook(caller: UObject, function: UFunction, params: FStruct) -> bool:
+        holding = FindObject('HoldingAreaDestination', 'Loader.TheWorld:PersistentLevel.HoldingAreaDestination_1')
+        if holding:
+            holding.ExitPointsCounter = -99
+        return True
+
+    if disable_portal:
+        RunHook("Engine.Actor.TriggerGlobalEventClass", 'SpeedrunPractice', disable_portal_hook)
+    else:
+        RemoveHook("Engine.Actor.TriggerGlobalEventClass", 'SpeedrunPractice')
