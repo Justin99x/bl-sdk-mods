@@ -22,7 +22,7 @@ class SpeedrunPractice(ModMenu.SDKMod):
     Name: str = "Speedrun Practice"
     Author: str = "Justin99"
     Description: str = "Various utilities for practicing speedruns"
-    Version: str = "1.5"
+    Version: str = "1.6"
     SupportedGames: ModMenu.Game = ModMenu.Game.BL2
     Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility  # One of Utility, Content, Gameplay, Library; bitwise OR'd together
     SaveEnabledState: ModMenu.EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings

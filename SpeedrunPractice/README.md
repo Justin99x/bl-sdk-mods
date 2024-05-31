@@ -19,6 +19,11 @@ Quests) and Geared Sal.
 
 Accidental presses of the Achievements menu option no longer open Steam/Epic
 
+### Disable travel portal
+
+There's an option in the menu to disable the blue tunnel on entering a level at a fast travel station. Helpful for 
+faster practice when level reloads are needed.
+
 ### Move save to top
 
 Keybind to use `touch` command to set the modified time of your save file to current time, which effectively brings it
@@ -124,17 +129,23 @@ Badabooms in slots 3 and 4.
 
 ### Reset gunzerk, teleport, and trigger skills (Geared Sal)
 
-A separate keybind to do the same thing as reset gunzerk, plus teleport you to the currently active Commander position,
-and trigger skills of your choosing. The skills triggered by this keybind are configurable in the options menu:
+A separate keybind to do the same thing as reset gunzerk, plus teleport you to the currently active Commander position
+with 0 velocity, and trigger skills of your choosing. The skills triggered by this keybind are configurable in the
+options menu:
 
 - Incite
 - Locked and Loaded
 - All kill skills
 
-
 ## Changelog
 
+### Version 1.6
+
+- Added option to disable travel portal (blue tunnel) for faster practice.
+- When resetting to commander position as Geared Sal, velocity is now set to 0.
+
 ### Version 1.5
+
 - Added Geared Sal functionality.
 - Options and keybinds update automatically based on loaded character and speedrun category selection.
 - Block achievements from tabbing out your game.
