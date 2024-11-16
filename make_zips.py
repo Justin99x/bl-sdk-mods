@@ -17,5 +17,5 @@ def zip_dir(dir_name: str):
 
 
 if __name__ == '__main__':
-    zip_dir("SpeedrunPractice")
+    # zip_dir("SpeedrunPractice")
     zip_dir("BorderlandsRewind")

@@ -3,7 +3,7 @@
 
 Weapon merging! Infinite ammo! Bee/Conference Call! Evil Smasher SMASH! 
 
-Bring back some community favorite glitches that no-fun Gearbox patched out.
+Bring back some community favorite glitches that no-fun Gearbox patched out. Supports Co-op!
 
 ## Features
 
