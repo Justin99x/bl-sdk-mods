@@ -67,7 +67,8 @@ def apply_full_amp(caller: UObject, function: UFunction, params: FStruct):
     projectiles_attr = FindObject("AttributeDefinition", "D_Attributes.Weapon.WeaponProjectilesPerShot")
     projectiles = projectiles_attr.GetValue(active_weapon)[0]
 
-    amp_skills = get_skill_stacks(PC, ['Impact_Shield_Skill_Legendary', 'Impact_Shield_Skill'])
+    amp_skills = [skill for skill in PC.GetSkillManager().ActiveSkills if
+                  skill.Definition.Name in ['Impact_Shield_Skill_Legendary', 'Impact_Shield_Skill']]
     for amp_skill in amp_skills:
         if amp_skill.SkillState == 1:
             weapon_damage_effect = [effect for effect in amp_skill.SkillEffects if
