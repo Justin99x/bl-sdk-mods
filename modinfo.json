@@ -2,13 +2,41 @@
   "mods": [
     {
       "name": "Speedrun Practice",
-      "description": "Utilities for efficient practice of speedrunning on current patch. Implements glitches present on patch 1.1.",
+      "description": "Utilities for speedrun practice on current patch. Support for Any% (v1.1), All Quests (v1.3.1) and Geared Sal (v2.0)",
       "types": ["Utility"],
       "supports": ["BL2"],
-      "source": "https://github.com/Justin99x/bl-sdk-mods/tree/main/AnyPercentHelper",
-      "latest": "1.4",
+      "source": "https://github.com/Justin99x/bl-sdk-mods/tree/main/SpeedrunPractice",
+      "latest": "1.6",
       "versions": {
-        "1.4": "https://github.com/Justin99x/bl-sdk-mods/raw/main/AnyPercentHelper/AnyPercentHelper.zip"
+        "1.6": "https://github.com/Justin99x/bl-sdk-mods/raw/main/SpeedrunPractice/SpeedrunPractice.zip"
+      },
+      "requirements": {
+        "Commander": ">=2.5",
+        "UserFeedback": ">=1.6"
+      }
+    },
+    {
+      "name": "Borderlands Rewind",
+      "description": [
+        "Provides options to enable: \n",
+        "- Weapon merging\n",
+        "- Weapon skill stacking (e.g. infinite ammo, Evil Smasher buffs)\n",
+        "- Full amp damage on every pellet\n\n",
+        "Keybinds are available to instantly stack various glitches from older and current patch:\n",
+        "- Buckup glitch\n",
+        "- Infinite ammo (Vladof launcher skill stacks)\n",
+        "- Evil Smasher SMASH\n",
+        "- Gaige/Maya kill skill glitch\n",
+        "- Axton Expertise movement speed\n",
+        "- Merge equipped weapons."
+      ],
+      "tagline": "Weapon merging! Infinite ammo! Bee/Conference Call! Evil Smasher SMASH! Bring back some community favorite glitches that no-fun Gearbox patched out.",
+      "types": ["Gameplay"],
+      "supports": ["BL2"],
+      "source": "https://github.com/Justin99x/bl-sdk-mods/tree/main/BorderlandsRewind",
+      "latest": "1.0",
+      "versions": {
+        "1.0": "https://github.com/Justin99x/bl-sdk-mods/raw/main/BorderlandsRewind/BorderlandsRewind.zip"
       },
       "requirements": {
         "UserFeedback": ">=1.6"
