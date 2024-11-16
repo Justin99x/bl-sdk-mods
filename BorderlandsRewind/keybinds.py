@@ -56,12 +56,16 @@ def set_free_shot_stacks():
     text_input_stacks(set_skill_stacks, "Set Free Shot Stacks", "GD_Weap_Launchers.Skills.Skill_VladofHalfAmmo")
 
 
-def set_smasher_chance_stacks():
-    text_input_stacks(set_skill_stacks, "Set Smasher Chance Stacks", "GD_Weap_AssaultRifle.Skills.Skill_EvilSmasher_SMASH")
+def set_smasher_smash_stacks():
+    text_input_stacks(set_skill_stacks, "Set Smasher SMASH Stacks", "GD_Weap_AssaultRifle.Skills.Skill_EvilSmasher_SMASH")
 
 
 def set_buckup_stacks():
-    text_input_stacks(set_skill_stacks, "Set Buckup Stacks", "GD_Tulip_DeathTrap.Skills.Skill_ShieldBoost_Player")
+    PC = get_pc()
+    if PC.PlayerClass.Name == 'CharClass_Mechromancer':
+        text_input_stacks(set_skill_stacks, "Set Buckup Stacks", "GD_Tulip_DeathTrap.Skills.Skill_ShieldBoost_Player")
+    else:
+        feedback("Only available for Gaige")
 
 
 def set_maya_gaige_kill_stacks():
@@ -82,7 +86,7 @@ def set_expertise_stacks():
 
 buckup = Keybind("Set Buckup Stacks", "None", OnPress=set_buckup_stacks)
 free_shot = Keybind("Set Free Shot Stacks", "None", OnPress=set_free_shot_stacks)
-smasher = Keybind("Set Smasher Chance Stacks", "None", OnPress=set_smasher_chance_stacks)
+smasher = Keybind("Set Smasher Chance Stacks", "None", OnPress=set_smasher_smash_stacks)
 kill_skills = Keybind("Set Kill Skill Stacks", "None", OnPress=set_maya_gaige_kill_stacks)
 expertise = Keybind("Set Expertise Stacks", "None", OnPress=set_expertise_stacks)
 merge_weapons = Keybind("Merge Equipped Weapons", "None", OnPress=merge_equipped_weapons)

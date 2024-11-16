@@ -21,7 +21,7 @@ class BorderlandsRewind(SDKMod):
     Description: str = "Enables glitches from early versions of the game"
     Version: str = "1.0.0"
     SupportedGames: ModMenu.Game = ModMenu.Game.BL2
-    Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility  # One of Utility, Content, Gameplay, Library; bitwise OR'd together
+    Types: ModMenu.ModTypes = ModMenu.ModTypes.Gameplay  # One of Utility, Content, Gameplay, Library; bitwise OR'd together
     SaveEnabledState: ModMenu.EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings
 
     def __init__(self):
